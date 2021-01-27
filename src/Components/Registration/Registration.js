@@ -29,6 +29,13 @@ const languages = [
   "Испанский"
 ];
 
+const selectData = {
+  inputId: "language",
+  labelText: "Язык",
+  placeholderText: "Язык",
+  languages: languages,
+};
+
 function onChangeHandler(event) {
 
 }
