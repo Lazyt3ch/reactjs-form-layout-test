@@ -2,6 +2,10 @@ import React from 'react';
 import "./Registration.css";
 import Input from "../Input/Input.js";
 
+function onChangeHandler(event) {
+
+}
+
 function Registration(props) {
   return (
     <div className="registration-form-container">
@@ -13,6 +17,11 @@ function Registration(props) {
           <span>Уже есть аккаунт?</span> <a href="#">Войти</a>
         </div>
 
+        <Input 
+          labelText="Имя"
+          placeholderText="Введите Ваше имя"
+          onChangeHandler={onChangeHandler}
+        />
         
       </form>
     </div>
