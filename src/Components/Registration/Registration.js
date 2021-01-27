@@ -34,7 +34,7 @@ const selectData = {
   inputId: "language",
   labelText: "Язык",
   defaultText: "Язык",
-  languages: languages,
+  options: languages,
 };
 
 function onChangeHandler(event) {
