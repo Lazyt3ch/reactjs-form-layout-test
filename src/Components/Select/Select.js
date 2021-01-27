@@ -7,8 +7,10 @@ function Select(props) {
     const {labelText, initialValue, options, selectId } = props.data;
 
     // const [value, setValue] = useState(initialValue);
-    let value = initialValue;
-    console.log("value =", value);
+    // let value = initialValue;
+    // console.log("value =", value);
+
+    // let extendedOptions = [initialValue, ...options];
   
     return (
       <div className="registration-form-select margin-left margin-top">
@@ -16,7 +18,7 @@ function Select(props) {
           {labelText}
         </label>
   
-        <select id={selectId} className="custom-select" value={value}
+        <select id={selectId} className="custom-select" value={"SOMETHING"}
             onChange={onChangeHandler}
         >
             {/* options.map((o, idx) => (idx === 0 
