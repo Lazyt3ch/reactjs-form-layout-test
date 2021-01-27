@@ -11,9 +11,8 @@ function Select(props) {
           {labelText}
         </label>
   
-        <select id={selectId}
+        <select id={selectId} 
             onChange={onChangeHandler}
-
         >
             {options.map((o, idx) => (idx === 0 
                 ? <option key={o} selected={true} disabled={true}>{o}</option>
