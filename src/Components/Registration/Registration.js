@@ -45,7 +45,8 @@ function Registration(props) {
     initialValue: "Язык",
     // options: ["Язык", ...languages], // 0th element is not a language
     options: languages,
-    language: language,
+    language,
+    setLanguage,
   };
 
   return (
@@ -70,7 +71,6 @@ function Registration(props) {
 
         <Select 
           data={selectData}
-          setLanguage={setLanguage}          
         />
 
       </form>
