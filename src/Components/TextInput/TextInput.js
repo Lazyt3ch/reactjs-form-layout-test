@@ -11,7 +11,7 @@ function TextInput(props) {
         {labelText}
       </label>
 
-      <input type="text" className="input-field" 
+      <input type="text" 
         onChange={onChangeHandler}
         placeholder={placeholderText}
         id={inputId}

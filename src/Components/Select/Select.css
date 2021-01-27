@@ -20,4 +20,8 @@
     box-shadow: 0px 4px 8px 0px #2C2738 4%;
     font-size: 16px;
     font-weight: 400;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+    border-radius: 6px;    
 }
