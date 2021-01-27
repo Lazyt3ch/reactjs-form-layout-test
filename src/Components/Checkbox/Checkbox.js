@@ -3,7 +3,7 @@ import "./Checkbox.css";
 
 function Checkbox(props) {
   return (
-    <div className="registration-form-checkbox margin-left margin-top">
+    <div className="registration-form-checkbox margin-top">
     
     </div>
   );
