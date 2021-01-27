@@ -10,3 +10,12 @@
     border-radius: 24px;
     background-color: white; /* temporary color */
 }
+
+.registration-form-title {    
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: black;
+    line-height: 44px;
+    margin: 40px auto 0;
+}
