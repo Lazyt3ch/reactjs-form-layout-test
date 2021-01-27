@@ -8,11 +8,11 @@ function Input(props) {
     <div className="registration-form-input">
       <label>
         {labelText}
-        <input type="text" 
-          onChange={onChangeHandler}
-          placeholder={placeholderText}>
-        </input>
       </label>
+      <input type="text" 
+        onChange={onChangeHandler}
+        placeholder={placeholderText}>
+      </input>
     </div>
   )
 }
