@@ -12,9 +12,9 @@ function Input(props) {
 
       <input type="text" 
         onChange={onChangeHandler}
-        placeholder={placeholderText}>
+        placeholder={placeholderText}
         id={inputId}
-      </input>
+      />
     </div>
   )
 }
