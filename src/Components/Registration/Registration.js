@@ -43,8 +43,7 @@ function Registration(props) {
     selectId: "language",
     labelText: "Язык",
     initialValue: "Язык",
-    // options: ["Язык", ...languages], // 0th element is not a language
-    options: languages,
+    languages,
     language,
     setLanguage,
   };

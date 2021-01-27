@@ -3,13 +3,16 @@ import React from 'react';
 import "./Select.css";
 
 function Select(props) {
-    const {labelText, initialValue, options, selectId, value, setLanguage } = props.data;
+  const {
+    selectId, 
+    labelText, 
+    initialValue, 
+    languages, 
+    language, 
+    setLanguage, 
+  } = props.data;
 
-    // const [language, setLanguage] = useState(initialValue);
-    // let value = initialValue;
-    // console.log("value =", value);
-
-    let extendedOptions = [initialValue, ...options];
+  let extendedOptions = [initialValue, ...languages];
   
     return (
       <div className="registration-form-select margin-left margin-top">
@@ -17,8 +20,8 @@ function Select(props) {
           {labelText}
         </label>
   
-        <select id={selectId} className="custom-select" value={value}
-            onChange={() => setLanguage(value)}
+        <select id={selectId} className="custom-select" value={language}
+            onChange={() => setLanguage(language)}
         >
           {extendedOptions.map((o, idx) => 
             <option key={o} style={(idx === 0 ? {display: "none"} : null)}>{o}</option>)}
