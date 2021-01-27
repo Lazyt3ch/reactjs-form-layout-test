@@ -12,6 +12,10 @@ function Select(props) {
   } = props.data;
 
   let extendedOptions = [initialValue, ...languages];
+
+  const handleChange = (e) => {
+    setLanguage(e.target.value);
+  }
   
   return (
     <div className="registration-form-select margin-left margin-top">
@@ -20,7 +24,7 @@ function Select(props) {
       </label>
 
       <select id={selectId} className="custom-select" value={language}
-          onChange={() => setLanguage(language)}
+        onChange={handleChange}
       >
         {extendedOptions.map((o, idx) => 
           <option key={o} style={(idx === 0 ? {display: "none"} : null)}>{o}</option>)}
