@@ -4,14 +4,18 @@
 
 .registration-form-input label {
     display: block;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .input-field {
     height: 52px;
-    width: -webkit-calc(100% - 60px);
-    width: -moz-calc(100% - 60px);    
-    width: calc(100% - 60px);    
+    padding-left: 16px;
+    width: -webkit-calc(100% - 76px);
+    width: -moz-calc(100% - 76px);    
+    width: calc(100% - 76px);    
     border-radius: 6px;
+    /* padding: 16px 15px 15px 16px; */
 }
 
 .invalid-message {
