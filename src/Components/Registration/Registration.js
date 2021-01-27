@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Registration.css";
-import TextInput from "../Input/TextInput.js";
+import TextInput from "../TextInput/TextInput.js";
 
 const invalidMessage = "Введено некорректное значение";
 
