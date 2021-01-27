@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Registration.css";
+import Input from "../Input/Input.js";
 
 function Registration(props) {
   return (
@@ -10,9 +11,9 @@ function Registration(props) {
         </div>
         <div className="registration-form-text margin-left">
           <span>Уже есть аккаунт?</span> <a href="#">Войти</a>
-
-
         </div>
+
+        
       </form>
     </div>
   )
