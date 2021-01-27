@@ -15,7 +15,10 @@ function Select(props) {
             onChange={onChangeHandler}
 
         >
-            {options.map((o) => <option key={o} >{o}</option>)}
+            {options.map((o, idx) => (idx === 0 
+                ? <option key={o} selected={true} disabled={true}>{o}</option>
+                : <option key={o}>{o}</option>)
+            }
         </select>
   
         <div className="invalid-message">
