@@ -1,10 +1,11 @@
 import React from 'react';
 import "./Select.css";
 
+// TODO: Find a way to stylize options, especially their heights
 function getOptionStyles(idx) {
   return (idx === 0)
     ? ({ display: "none" })
-    : ({ height: "40px" });
+    : ({ });
 }
 
 function Select(props) {
