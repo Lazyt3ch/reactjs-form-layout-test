@@ -1,3 +1,9 @@
 .registration-form-select {
     width: 100%;
 }
+
+.registration-form-select label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
