@@ -2,15 +2,9 @@ import React from 'react';
 import "./Select.css";
 
 function getOptionStyles(idx) {
-  const optionStyles = {
-    height: "44px",
-  };
-
-  if (idx === 0) {
-    optionStyles.display = "none";
-  }
-
-  return optionStyles;
+  return (idx === 0)
+    ? ({ display: "none" })
+    : ({ height: "44px" });
 }
 
 function Select(props) {
