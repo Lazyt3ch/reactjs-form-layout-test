@@ -22,6 +22,13 @@ const textInputData = [
   },  
 ];
 
+const languages = [
+  "Русский",
+  "Английский",
+  "Китайский",
+  "Испанский"
+];
+
 function onChangeHandler(event) {
 
 }
