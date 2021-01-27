@@ -8,6 +8,7 @@ function Select(props) {
 
     // const [value, setValue] = useState(initialValue);
     let value = initialValue;
+    console.log("value =", value);
   
     return (
       <div className="registration-form-select margin-left margin-top">
