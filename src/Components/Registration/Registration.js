@@ -2,6 +2,8 @@ import React from 'react';
 import "./Registration.css";
 import Input from "../Input/Input.js";
 
+const invalidMessage = "Введено некорректное значение";
+
 const inputData = [
   {
     inputId: "username",
@@ -39,6 +41,7 @@ function Registration(props) {
         {inputData.map((data) => 
           <Input
             data={data}
+            invalidMessage={invalidMessage}
             onChangeHandler={onChangeHandler}
           />
         )}
