@@ -8,7 +8,8 @@
 
 .input-field {
     height: 52px;
-    width: 100%;    
-    /* margin-right: 30px; */
+    width: -webkit-calc(100% - 60px);
+    width: -moz-calc(100% - 60px);    
+    width: calc(100% - 60px);    
     border-radius: 6px;
 }
