@@ -10,7 +10,7 @@ function Input(props) {
         {labelText}
       </label>
 
-      <input type="text input-field" 
+      <input type="text" className="input-field" 
         onChange={onChangeHandler}
         placeholder={placeholderText}
         id={inputId}
