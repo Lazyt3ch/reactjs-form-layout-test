@@ -37,7 +37,7 @@ function onChangeHandler(event) {
 }
 
 function Registration(props) {
-  const [language, setLanguage] = "";
+  const [language, setLanguage] = useState("");
 
   const selectData = {
     selectId: "language",
@@ -47,6 +47,8 @@ function Registration(props) {
     language,
     setLanguage,
   };
+
+
 
   return (
     <div className="registration-form-container">
