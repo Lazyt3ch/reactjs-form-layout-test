@@ -14,7 +14,8 @@ function Registration(props) {
           <p className="registration-form-title">Регистрация</p>
         </div>
         <div className="registration-form-text margin-left">
-          <span>Уже есть аккаунт?</span> <a href="#">Войти</a>
+          {/* <span>Уже есть аккаунт?</span> <a href="#">Войти</a> */}
+          <span>Уже есть аккаунт?</span> <span>Войти</span>
         </div>
 
         <Input 
