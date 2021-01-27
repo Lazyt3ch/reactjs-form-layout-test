@@ -11,13 +11,14 @@ function Select(props) {
           {labelText}
         </label>
   
-        <select id={selectId} 
+        <select id={selectId} className="custom-select"
             onChange={onChangeHandler}
         >
-            {options.map((o, idx) => (idx === 0 
+            {/* options.map((o, idx) => (idx === 0 
                 ? <option key={o} selected={true} disabled={true}>{o}</option>
                 : <option key={o}>{o}</option>))
-            }
+            */}
+            {options.map((o, idx) => <option key={o}>{o}</option>)}
         </select>
       </div>
     )
