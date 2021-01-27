@@ -16,6 +16,10 @@ function Input(props) {
         placeholder={placeholderText}
         id={inputId}
       />
+
+      <div className="invalid-message">
+        {/* TODO: Add message here */}
+      </div>
     </div>
   )
 }
