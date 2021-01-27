@@ -10,7 +10,7 @@ function Select(props) {
     // let value = initialValue;
     // console.log("value =", value);
 
-    // let extendedOptions = [initialValue, ...options];
+    let extendedOptions = [initialValue, ...options];
   
     return (
       <div className="registration-form-select margin-left margin-top">
@@ -21,11 +21,8 @@ function Select(props) {
         <select id={selectId} className="custom-select" value={"SOMETHING"}
             onChange={onChangeHandler}
         >
-            {/* options.map((o, idx) => (idx === 0 
-                ? <option key={o} selected={true} disabled={true}>{o}</option>
-                : <option key={o}>{o}</option>))
-            */}
-            {options.map((o, idx) => <option key={o}>{o}</option>)}
+          {extendedOptions.map((o, idx) => 
+            <option key={o} style={(idx === 0 ? {display: "none"} : null)}>{o}</option>)}
         </select>
       </div>
     )

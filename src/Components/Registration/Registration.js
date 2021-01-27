@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./Registration.css";
 import TextInput from "../TextInput/TextInput.js";
 import Select from "../Select/Select.js";
@@ -30,19 +30,24 @@ const languages = [
   "Испанский"
 ];
 
-const selectData = {
-  selectId: "language",
-  labelText: "Язык",
-  initialValue: "Язык",
-  // options: ["Язык", ...languages], // 0th element is not a language
-  options: languages,
-};
+
 
 function onChangeHandler(event) {
 
 }
 
 function Registration(props) {
+  const [language, setLanguage] = "";
+
+  const selectData = {
+    selectId: "language",
+    labelText: "Язык",
+    initialValue: "Язык",
+    // options: ["Язык", ...languages], // 0th element is not a language
+    options: languages,
+    value: language,
+  };
+
   return (
     <div className="registration-form-container">
       <form action="" className="registration-form">
