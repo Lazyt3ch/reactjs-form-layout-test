@@ -4,7 +4,7 @@ import TextInput from "../TextInput/TextInput.js";
 
 const invalidMessage = "Введено некорректное значение";
 
-const inputData = [
+const textInputData = [
   {
     inputId: "username",
     labelText: "Имя",
@@ -38,7 +38,7 @@ function Registration(props) {
           <span>Уже есть аккаунт?</span> <span>Войти</span>
         </div>
 
-        {inputData.map((data) => 
+        {textInputData.map((data) => 
           <TextInput
             data={data}
             invalidMessage={invalidMessage}
