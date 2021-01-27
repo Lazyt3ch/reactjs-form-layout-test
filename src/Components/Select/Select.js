@@ -4,9 +4,9 @@ import "./Select.css";
 
 function Select(props) {
     const {onChangeHandler} = props;
-    const {labelText, initialValue, options, selectId } = props.data;
+    const {labelText, initialValue, options, selectId, value } = props.data;
 
-    // const [value, setValue] = useState(initialValue);
+    // const [language, setLanguage] = useState(initialValue);
     // let value = initialValue;
     // console.log("value =", value);
 
@@ -18,7 +18,7 @@ function Select(props) {
           {labelText}
         </label>
   
-        <select id={selectId} className="custom-select" value={"SOMETHING"}
+        <select id={selectId} className="custom-select" value={value}
             onChange={onChangeHandler}
         >
           {extendedOptions.map((o, idx) => 
