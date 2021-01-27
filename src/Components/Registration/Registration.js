@@ -33,8 +33,7 @@ const languages = [
 const selectData = {
   selectId: "language",
   labelText: "Язык",
-  defaultText: "Язык",
-  options: languages,
+  options: ["Язык", ...languages], // 0th element is not a language
 };
 
 function onChangeHandler(event) {
