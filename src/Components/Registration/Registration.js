@@ -31,7 +31,7 @@ const languages = [
 ];
 
 const selectData = {
-  inputId: "language",
+  selectId: "language",
   labelText: "Язык",
   defaultText: "Язык",
   options: languages,
