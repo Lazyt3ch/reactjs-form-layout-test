@@ -3,16 +3,19 @@ import "./Select.css";
 
 function Select(props) {
     const {invalidMessage, onChangeHandler} = props;
-    const {labelText, defaultText, options, inputId } = props.data;
+    const {labelText, defaultText, options, selectId } = props.data;
   
     return (
       <div className="registration-form-input margin-left margin-top">
-        <label htmlFor={inputId}>
+        <label htmlFor={selectId}>
           {labelText}
         </label>
   
-        <select>
+        <select id={selectId}
+            onChange={onChangeHandler}
 
+        >
+            {options.map((o) => <option key={o} >{o}</option>)}
         </select>
   
         <div className="invalid-message">
