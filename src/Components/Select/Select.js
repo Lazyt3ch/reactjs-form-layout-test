@@ -3,7 +3,7 @@ import "./Select.css";
 
 function Select(props) {
     const {onChangeHandler} = props;
-    const {labelText, options, selectId } = props.data;
+    const {labelText, initialValue, options, selectId } = props.data;
   
     return (
       <div className="registration-form-select margin-left margin-top">
