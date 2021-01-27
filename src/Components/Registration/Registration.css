@@ -3,9 +3,9 @@
     padding: 0;
 }
 
-.registration {
+.container {
     width: 460px;
     min-width: 360px;
     height: 789px;
-    color: green; /* temporary color */
+    background-color: green; /* temporary color */
 }

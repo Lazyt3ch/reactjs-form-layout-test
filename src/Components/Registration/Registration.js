@@ -3,10 +3,12 @@ import "./Registration.css";
 
 function Registration(props) {
   return (
-    <form action="" className="registration">
-      
+    <div className="container">
+      <form action="" className="registration">
+        
 
-    </form>
+      </form>
+    </div>
   )
 }
 
