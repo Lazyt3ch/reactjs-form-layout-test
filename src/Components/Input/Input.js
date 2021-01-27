@@ -2,7 +2,7 @@ import React from 'react';
 import "./Input.css";
 
 function Input(props) {
-  const {onChangeHandler} = props;
+  const {invalidMessage, onChangeHandler} = props;
   const {labelText, placeholderText, inputId} = props.data;
 
   return (
@@ -19,7 +19,7 @@ function Input(props) {
 
       <div className="invalid-message">
         {/* TODO: Add message here */}
-        Invalid message
+        {invalidMessage}
       </div>
     </div>
   )
