@@ -5,12 +5,12 @@ function Input(props) {
   const {labelText, placeholderText, onChangeHandler, inputId} = props;
 
   return (
-    <div className="registration-form-input">
+    <div className="registration-form-input margin-left margin-top">
       <label htmlFor={inputId}>
         {labelText}
       </label>
 
-      <input type="text" 
+      <input type="text input-field" 
         onChange={onChangeHandler}
         placeholder={placeholderText}
         id={inputId}
