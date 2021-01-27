@@ -2,6 +2,24 @@ import React from 'react';
 import "./Registration.css";
 import Input from "../Input/Input.js";
 
+const inputData = [
+  {
+    inputId: "username",
+    labelText: "Имя",
+    placeholderText: "Введите ваше имя",
+  },
+  {
+    inputId: "email",
+    labelText: "Email",
+    placeholderText: "Введите ваше email",
+  },
+  {
+    inputId: "phone",
+    labelText: "Номер телефона",
+    placeholderText: "Введите номер телефона",
+  },  
+];
+
 function onChangeHandler(event) {
 
 }
@@ -18,12 +36,12 @@ function Registration(props) {
           <span>Уже есть аккаунт?</span> <span>Войти</span>
         </div>
 
-        <Input 
-          labelText="Имя"
-          inputId="username"
-          placeholderText="Введите Ваше имя"
-          onChangeHandler={onChangeHandler}
-        />
+        {inputData.map((data) => 
+          <Input
+            data={data}
+            onChangeHandler={onChangeHandler}
+          />
+        )}
 
       </form>
     </div>
