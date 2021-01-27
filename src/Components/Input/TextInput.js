@@ -1,7 +1,7 @@
 import React from 'react';
-import "./Input.css";
+import "./TextInput.css";
 
-function Input(props) {
+function TextInput(props) {
   const {invalidMessage, onChangeHandler} = props;
   const {labelText, placeholderText, inputId} = props.data;
 
@@ -25,4 +25,4 @@ function Input(props) {
   )
 }
 
-export default Input;
+export default TextInput;
