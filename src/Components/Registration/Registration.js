@@ -19,7 +19,7 @@ function Registration(props) {
 
         <Input 
           labelText="Имя"
-          id="username"
+          inputId="username"
           placeholderText="Введите Ваше имя"
           onChangeHandler={onChangeHandler}
         />
