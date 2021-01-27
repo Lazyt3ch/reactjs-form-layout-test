@@ -32,7 +32,7 @@ const languages = [
 const selectData = {
   inputId: "language",
   labelText: "Язык",
-  placeholderText: "Язык",
+  defaultText: "Язык",
   languages: languages,
 };
 
