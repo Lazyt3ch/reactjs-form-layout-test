@@ -1,6 +1,18 @@
 import React from 'react';
 import "./Select.css";
 
+function getOptionStyles(idx) {
+  const optionStyles = {
+    height: "44px",
+  };
+
+  if (idx === 0) {
+    optionStyles.display = "none";
+  }
+
+  return optionStyles;
+}
+
 function Select(props) {
   const {
     selectId, 
@@ -27,7 +39,7 @@ function Select(props) {
         onChange={handleChange}
       >
         {extendedOptions.map((o, idx) => 
-          <option key={o} style={(idx === 0 ? {display: "none"} : null)}>{o}</option>)}
+          <option key={o} style={getOptionStyles(idx)}>{o}</option>)}
       </select>
     </div>
   )
