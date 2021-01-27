@@ -3,7 +3,7 @@ import "./Select.css";
 
 function Select(props) {
     const {invalidMessage, onChangeHandler} = props;
-    const {labelText, defaultText, options, selectId } = props.data;
+    const {labelText, options, selectId } = props.data;
   
     return (
       <div className="registration-form-input margin-left margin-top">
@@ -17,7 +17,7 @@ function Select(props) {
         >
             {options.map((o, idx) => (idx === 0 
                 ? <option key={o} selected={true} disabled={true}>{o}</option>
-                : <option key={o}>{o}</option>)
+                : <option key={o}>{o}</option>))
             }
         </select>
   
