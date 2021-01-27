@@ -6,7 +6,7 @@ function Select(props) {
     const {labelText, options, selectId } = props.data;
   
     return (
-      <div className="registration-form-input margin-left margin-top">
+      <div className="registration-form-select margin-left margin-top">
         <label htmlFor={selectId}>
           {labelText}
         </label>
