@@ -9,6 +9,7 @@ function Input(props) {
       <label>
         {labelText}
       </label>
+      
       <input type="text" 
         onChange={onChangeHandler}
         placeholder={placeholderText}>
