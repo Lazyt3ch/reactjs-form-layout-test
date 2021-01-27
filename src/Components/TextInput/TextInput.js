@@ -2,8 +2,13 @@ import React from 'react';
 import "./TextInput.css";
 
 function TextInput(props) {
-  const {invalidMessage, onChangeHandler} = props;
-  const {labelText, placeholderText, inputId} = props.data;
+  const {
+    labelText, 
+    placeholderText, 
+    inputId, 
+    invalidMessage, 
+    onChangeHandler
+  } = props.data;
 
   return (
     <div className="registration-form-input margin-left margin-top">
