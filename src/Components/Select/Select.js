@@ -23,7 +23,7 @@ function Select(props) {
         {labelText}
       </label>
 
-      <select id={selectId} className="custom-select" value={language}
+      <select id={selectId} value={language}
         onChange={handleChange}
       >
         {extendedOptions.map((o, idx) => 
