@@ -78,6 +78,10 @@ function Registration(props) {
           data={selectData}
         />
 
+        <div className="registration-form-conditions margin-left">
+          <input type="checkbox"></input>
+        </div>
+
       </form>
     </div>
   )
