@@ -9,10 +9,6 @@
 }
 
 .registration-form-select select {
-    position: relative;
-}
-
-.registration-form-select select {
     height: 52px;
     padding-left: 16px;
     width: -webkit-calc(100% - 76px);
@@ -30,6 +26,3 @@
     border-radius: 6px;    
 }
 
-.registration-form-select select {
-    display: none;
-}

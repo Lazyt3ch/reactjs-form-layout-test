@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./Select.css";
 
 function Select(props) {
     const {onChangeHandler} = props;
     const {labelText, initialValue, options, selectId } = props.data;
+
+    const [value, setValue] = useState(initialValue);
   
     return (
       <div className="registration-form-select margin-left margin-top">
@@ -11,7 +13,7 @@ function Select(props) {
           {labelText}
         </label>
   
-        <select id={selectId} className="custom-select"
+        <select id={selectId} className="custom-select" value={value}
             onChange={onChangeHandler}
         >
             {/* options.map((o, idx) => (idx === 0 
