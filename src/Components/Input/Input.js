@@ -2,7 +2,8 @@ import React from 'react';
 import "./Input.css";
 
 function Input(props) {
-  const {labelText, placeholderText, onChangeHandler, inputId} = props;
+  const {onChangeHandler} = props;
+  const {labelText, placeholderText, inputId} = props.data;
 
   return (
     <div className="registration-form-input margin-left margin-top">
