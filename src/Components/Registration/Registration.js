@@ -56,6 +56,7 @@ function Registration(props) {
 
         {textInputData.map((data) => 
           <TextInput
+            key={data}
             data={data}
             invalidMessage={invalidMessage}
             onChangeHandler={onChangeHandler}
