@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import "./Registration.css";
 import TextInput from "../TextInput/TextInput.js";
 import Select from "../Select/Select.js";
+import Checkbox from "../Checkbox/Checkbox.js";
 
 const invalidMessage = "Введено некорректное значение";
 
@@ -79,7 +80,9 @@ function Registration(props) {
         />
 
         <div className="registration-form-conditions margin-left">
-          <input type="checkbox"></input>
+          <Checkbox 
+          
+          />
         </div>
 
       </form>
