@@ -62,7 +62,6 @@ function Registration(props) {
 
         <Select 
           data={selectData}
-          invalidMessage={invalidMessage}
           onChangeHandler={onChangeHandler}          
         />
 

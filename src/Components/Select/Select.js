@@ -2,7 +2,7 @@ import React from 'react';
 import "./Select.css";
 
 function Select(props) {
-    const {invalidMessage, onChangeHandler} = props;
+    const {onChangeHandler} = props;
     const {labelText, options, selectId } = props.data;
   
     return (
@@ -20,11 +20,6 @@ function Select(props) {
                 : <option key={o}>{o}</option>))
             }
         </select>
-  
-        <div className="invalid-message">
-          {/* TODO: Add message here */}
-          {invalidMessage}
-        </div>
       </div>
     )
   }
