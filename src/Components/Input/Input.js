@@ -19,6 +19,7 @@ function Input(props) {
 
       <div className="invalid-message">
         {/* TODO: Add message here */}
+        Invalid message
       </div>
     </div>
   )
