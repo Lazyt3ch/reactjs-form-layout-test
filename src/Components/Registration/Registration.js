@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Registration.css";
 import TextInput from "../TextInput/TextInput.js";
+import Select from "../Select/Select.js";
 
 const invalidMessage = "Введено некорректное значение";
 
@@ -59,6 +60,12 @@ function Registration(props) {
             onChangeHandler={onChangeHandler}
           />
         )}
+
+        <Select 
+          data={selectData}
+          invalidMessage={invalidMessage}
+          onChangeHandler={onChangeHandler}          
+        />
 
       </form>
     </div>
