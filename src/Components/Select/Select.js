@@ -1,11 +1,13 @@
-import React, {useState} from 'react';
+import React from 'react';
+// import React, {useState} from 'react';
 import "./Select.css";
 
 function Select(props) {
     const {onChangeHandler} = props;
     const {labelText, initialValue, options, selectId } = props.data;
 
-    const [value, setValue] = useState(initialValue);
+    // const [value, setValue] = useState(initialValue);
+    let value = initialValue;
   
     return (
       <div className="registration-form-select margin-left margin-top">
