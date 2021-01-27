@@ -17,15 +17,20 @@
     border-radius: 24px;
     font-family: "IBM Plex Sans", sans-serif;
     background-color: white; /* temporary color */
+    padding-top: 40px;
 }
 
-.registration-form-header {
-    margin: 40px auto 0;
-}
+/* .registration-form-header {
+    margin-top: 40px;
+} */
 
 .registration-form-title {        
     font-size: 34px;
     font-weight: 700;
     color: black;
     line-height: 44px;
+}
+
+.margin-left {
+    margin-left: 30px;
 }
