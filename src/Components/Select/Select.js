@@ -4,7 +4,7 @@ import "./Select.css";
 function getOptionStyles(idx) {
   return (idx === 0)
     ? ({ display: "none" })
-    : ({ height: "44px" });
+    : ({ height: "40px" });
 }
 
 function Select(props) {
