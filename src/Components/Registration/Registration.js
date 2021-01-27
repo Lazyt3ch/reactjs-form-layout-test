@@ -8,6 +8,11 @@ function Registration(props) {
         <div className="registration-form-header">
           <p className="registration-form-title">Регистрация</p>
         </div>
+        <div className="registration-form-text">
+          <span>Уже есть аккаунт?</span> <a href="#">Войти</a>
+
+
+        </div>
       </form>
     </div>
   )
