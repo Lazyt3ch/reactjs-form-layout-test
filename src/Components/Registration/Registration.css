@@ -1,5 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .registration {
     width: 460px;
     min-width: 360px;
     height: 789px;
+    color: green; /* temporary color */
 }
