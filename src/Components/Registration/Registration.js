@@ -45,7 +45,7 @@ function Registration(props) {
     },  
   ];
 
-  const textInputStates = useState({
+  const [textInputStates, setTextInputStates] = useState({
     username: { isValid: false, isFilled: false },
     email: { isValid: false, isFilled: false },
     phone: { isValid: false, isFilled: false },
