@@ -7,7 +7,7 @@ function Submit(props) {
   const getSubmitClasses = () => 
     `registration-form-submit margin-left ${termsAccepted 
       ? "registration-form-submit-enabled"
-      : "registration-form-checkbox-disabled"}`;
+      : "registration-form-submit-disabled"}`;
   
   return (
     <div className={getSubmitClasses()}>
