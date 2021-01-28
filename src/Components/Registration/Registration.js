@@ -65,7 +65,7 @@ function Registration(props) {
 
         <div className="registration-form-text margin-left">
           {/* Remember to replace the dummy link! */}
-          <span>Уже есть аккаунт?</span> <a href="www.ya.ru">Войти</a>
+          <span>Уже есть аккаунт?</span> <a href="www.ya.ru" className="link">Войти</a>
         </div>
 
         {textInputData.map((data) => 
