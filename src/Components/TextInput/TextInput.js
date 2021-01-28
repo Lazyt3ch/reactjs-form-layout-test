@@ -11,9 +11,15 @@ function TextInput(props) {
     tabIndex,
   } = props.data;
 
+  const { textInputStates, setTextInputStates } = props;
+
   const [isFocus, setIsFocus] = useState(false);
 
-  const { textInputStates, setTextInputStates } = props;
+  const getInputFieldStyles = () => 
+    `registration-form-input-field ${isFocus
+      ? "registration-form-input-field-focus"
+      : "registration-form-input-field-no-focus"
+    }`;
 
   function onChangeHandler(event) {
     console.log("tabIndex =", tabIndex);
@@ -44,7 +50,7 @@ function TextInput(props) {
         {labelText}
       </label>
 
-      <input type="text" className="registration-form-input-field"
+      <input type="text" className={getInputFieldStyles()}
         onChange={onChangeHandler}
         onFocus={() => setIsFocus(true)}
         onBlur={() => setIsFocus(false)}
