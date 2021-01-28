@@ -45,7 +45,7 @@ function TextInput(props) {
         {labelText}
       </label>
 
-      <input type="text" 
+      <input type="text" className="registration-form-input-field"
         onChange={onChangeHandler}
         placeholder={placeholderText}
         id={inputId}
