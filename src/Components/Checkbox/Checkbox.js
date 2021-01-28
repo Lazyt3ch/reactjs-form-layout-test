@@ -2,6 +2,8 @@ import React from 'react';
 import "./Checkbox.css";
 
 function Checkbox(props) {
+  const {termsAccepted, setTermsAccepted} = props;       
+
   return (
     <div className="registration-form-checkbox">
       <svg className="tickmark" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
