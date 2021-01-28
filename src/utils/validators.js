@@ -22,7 +22,7 @@ const validate = (value, valueType) => {
         return false; // Plus sign is allowed in the very beginning only
       }
 
-      if ( trimmedChars.filter( char => "0123456789".includes(char) ).length > 11 ) {
+      if ( trimmedChars.filter( char => "0123456789".includes(char) ).length !== 11 ) {
         return false; // Maximum allowed number of digits is 11
       }
 
