@@ -25,7 +25,7 @@
 }
 
 .registration-form-input-field:focus {
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     border: 2px solid #0880AE; 
     box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
 }
