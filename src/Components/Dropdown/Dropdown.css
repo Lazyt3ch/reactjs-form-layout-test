@@ -20,6 +20,9 @@
     width: calc(100% - 76px);    
     border-radius: 6px;    
     border: 1px solid #DBE2EA;
+
+    font-weight: normal;
+    font-size: 16px;
     color: #2C2738;
     box-shadow: 0px 4px 8px 0px #2C2738 4%;
     font-size: 16px;
