@@ -15,11 +15,21 @@ function Dropdown(props) {
 
   const handleChange = (e) => {
     setLanguage(e.target.value);
-  }
+  };
+
+  const openDropdown = (e) => {
+    console.log("dropdown opening");
+  };
+
+  // Custom dropdown example: https://www.w3schools.com/howto/howto_js_dropdown.asp
   
   return (
-    <div className="registration-form-select margin-left margin-top">
+    <div className="registration-form-dropdown margin-left margin-top">
+      <div className="registration-form-dropdown-box"
+        onClick={openDropdown}
+      >
 
+      </div>
     </div>
   )
 }
