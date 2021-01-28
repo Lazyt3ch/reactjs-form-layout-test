@@ -5,7 +5,6 @@ import Select from "../Select/Select.js";
 import Dropdown from "../Dropdown/Dropdown.js";
 import Checkbox from "../Checkbox/Checkbox.js";
 import Submit from "../Submit/Submit.js";
-// import validate from "../../utils/validators.js";
 
 const invalidMessage = "Введено некорректное значение";
 
@@ -15,11 +14,6 @@ const languages = [
   "Китайский",
   "Испанский"
 ];
-
-// function onChangeHandler(event) {
-//   const {value, id} = event.target;
-//   return validate(value, id);
-// }
 
 function Registration(props) {
   const textInputData = [
@@ -65,7 +59,6 @@ function Registration(props) {
 
   const [termsAccepted, setTermsAccepted] = useState(false);
 
-  // eslint-disable-next-line
   const [isSubmitReady, setIsSubmitReady] = useState(false);
 
   useEffect(() => {
@@ -76,8 +69,6 @@ function Registration(props) {
     },
     [textInputStates, termsAccepted]
   );
-
-
 
   const submit = () => {
 
