@@ -1,7 +1,17 @@
 .registration-form-checkbox {
     display: inline-block;
+    /* display: flex;
+    align-items: center;
+    justify-items: center; */
+
+    /* when checkbox is not checked: */
     height: 28px;
     width: 28px;
+
+    /* when checkbox is checked: */
+    /* height: 24px;
+    width: 24px; */
+
     background: #FFFFFF;
     border: 1px solid #DBE2EA;
     border-radius: 4px;
