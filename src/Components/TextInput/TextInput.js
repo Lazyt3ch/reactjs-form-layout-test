@@ -8,16 +8,12 @@ function TextInput(props) {
     placeholderText, 
     inputId, 
     invalidMessage, 
-    // onChangeHandler,
   } = props.data;
-
-  // const { isValid, isFilled } = props.states;
 
   const { textInputStates, setTextInputStates } = props;
 
   function onChangeHandler(event) {
     const trimmedValue = event.target.value.trim();
-    // console.log("trimmedValue =", trimmedValue);
     let isFilled, isValid;
 
     if (!trimmedValue.length) {
@@ -27,7 +23,6 @@ function TextInput(props) {
       isFilled = true;
       isValid = validate(trimmedValue, inputId);
     }
-    // console.log("isFilled, isValid =", isFilled, isValid);
 
     setTextInputStates({...textInputStates, 
       [inputId]: {
