@@ -11,9 +11,9 @@ function TextInput(props) {
     // onChangeHandler,
   } = props.data;
 
-  const { isValid, isFilled } = props.states;
+  // const { isValid, isFilled } = props.states;
 
-  const { setTextInputStates } = props;
+  const { states, setTextInputStates } = props;
 
   function onChangeHandler(event) {
     const {value, id} = event.target;
