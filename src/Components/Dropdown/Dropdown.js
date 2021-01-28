@@ -28,11 +28,11 @@ function Dropdown(props) {
       <div>
         {labelText}
       </div>      
-      
+
       <div className="registration-form-dropdown-box"
         onClick={openDropdown}
       >
-
+        {initialValue}
       </div>
     </div>
   )
