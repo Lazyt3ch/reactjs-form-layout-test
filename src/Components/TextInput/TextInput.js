@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./TextInput.css";
 import validate from "../../utils/validators.js";
 
@@ -11,8 +11,9 @@ function TextInput(props) {
     tabIndex,
   } = props.data;
 
-  const { textInputStates, setTextInputStates } = props;
+  const [isFocus, setIsFocus] = useState(false);
 
+  const { textInputStates, setTextInputStates } = props;
 
   function onChangeHandler(event) {
     console.log("tabIndex =", tabIndex);
@@ -45,7 +46,8 @@ function TextInput(props) {
 
       <input type="text" className="registration-form-input-field"
         onChange={onChangeHandler}
-        onFocus={() => console.log("Focus!")}
+        onFocus={() => setIsFocus(true)}
+        onBlur={() => setIsFocus(false)}
         placeholder={placeholderText}
         id={inputId}
         tabIndex={tabIndex}
