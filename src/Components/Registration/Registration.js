@@ -32,7 +32,7 @@ function Registration(props) {
     {
       inputId: "email",
       labelText: "Email",
-      placeholderText: "Введите ваше email",
+      placeholderText: "Введите ваш email",
       invalidMessage,
       onChangeHandler,
     },
