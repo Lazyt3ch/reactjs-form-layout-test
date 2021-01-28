@@ -100,6 +100,10 @@ function Registration(props) {
           data={selectData}
         />
 
+        <Dropdown 
+          data={selectData}
+        />        
+
         <div className="registration-form-terms margin-left margin-top">
           <Checkbox 
             termsAccepted={termsAccepted}
