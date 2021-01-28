@@ -1,11 +1,17 @@
 import React from 'react';
 import "./Checkbox.css";
 
+
 function Checkbox(props) {
   const {termsAccepted, setTermsAccepted} = props;     
   
+  const getCheckboxClasses = () => 
+    `registration-form-checkbox ${termsAccepted 
+      ? "registration-form-checkbox-checked"
+      : "registration-form-checkbox-unchecked"}`;
+  
   return (
-    <div className="registration-form-checkbox"
+    <div className={getCheckboxClasses()}
       onClick={() => setTermsAccepted(prevState => !prevState)}
     >
       <svg className="tickmark" style={termsAccepted ? null : {display: "none"}}

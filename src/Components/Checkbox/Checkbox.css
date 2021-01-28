@@ -4,19 +4,19 @@
     align-items: center;
     justify-items: center; */
 
-    /* when checkbox is not checked: */
+    background: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+}
+
+.registration-form-checkbox-unchecked {
     height: 28px;
     width: 28px;
-
-    /* when checkbox is checked: */
-    /* height: 24px;
-    width: 24px; */
-
-    background: #FFFFFF;
     border: 1px solid #DBE2EA;
-    border-radius: 4px;
-    box-shadow: 0px 4px 8px 0px #2C2738 4%;
+}
 
-    color: #0880AE;
-
+.registration-form-checkbox-checked {
+    height: 24px;
+    width: 24px;
+    border: 2px solid #0880AE;
 }
