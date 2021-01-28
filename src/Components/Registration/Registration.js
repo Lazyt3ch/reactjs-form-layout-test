@@ -86,6 +86,7 @@ function Registration(props) {
           />
 
           <div className="checkbox-text">
+            {/* Remember to replace the dummy link! */}
             Принимаю <a href="www.ya.ru" className="link">условия</a> использования
           </div>
         </div>
