@@ -8,6 +8,7 @@ function TextInput(props) {
     placeholderText, 
     inputId, 
     invalidMessage, 
+    tabIndex,
   } = props.data;
 
   const { textInputStates, setTextInputStates } = props;
@@ -44,6 +45,7 @@ function TextInput(props) {
         onChange={onChangeHandler}
         placeholder={placeholderText}
         id={inputId}
+        tabIndex={tabIndex}
       />
 
       <div className="invalid-message">
