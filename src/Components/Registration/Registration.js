@@ -4,6 +4,7 @@ import TextInput from "../TextInput/TextInput.js";
 import Select from "../Select/Select.js";
 import Checkbox from "../Checkbox/Checkbox.js";
 import Submit from "../Submit/Submit.js";
+import validate from "../../utils/validators.js";
 
 const invalidMessage = "Введено некорректное значение";
 
