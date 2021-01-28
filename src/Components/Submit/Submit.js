@@ -10,10 +10,8 @@ function Submit(props) {
       : "registration-form-checkbox-disabled"}`;
   
   return (
-    <div className={getSubmitClasses()}
-
-    >
-        SUBMIT
+    <div className={getSubmitClasses()}>
+        Зарегистрироваться
     </div>
   );
 }
