@@ -7,12 +7,17 @@ function TextInput(props) {
     placeholderText, 
     inputId, 
     invalidMessage, 
-    onChangeHandler,
+    // onChangeHandler,
   } = props.data;
 
   const { isValid, isFilled } = props.states;
 
   const { setTextInputStates } = props;
+
+  function onChangeHandler(event) {
+    const {value, id} = event.target;
+    return validate(value, id);
+  }
 
   return (
     <div className="registration-form-input margin-left margin-top">
