@@ -12,9 +12,18 @@ const validate = (value, valueType) => {
       return /^[a-z0-9+_.-]+@[a-z0-9.-]+$/i.test(value);
     case "phone":
       const ALLOWED_CHARS = "0123456789()-+";
-      const chars = Array.from(value.trim());
-      if ( !chars.every( char => ALLOWED_CHARS.includes(char) ) ) {
+      const trimmedChars = Array.from(value.trim());
+
+      if ( !trimmedChars.every( char => ALLOWED_CHARS.includes(char) ) ) {
         return false;
+      }
+
+      if ( trimmedChars.lastIndexOf("+") > 0 ) {
+        return false; // Plus sign is allowed in the very beginning only
+      }
+
+      if ( trimmedChars.filter( char => "0123456789".includes(char) ).length > 11 ) {
+        return false; // Maximum allowed number of digits is 11
       }
 
 
