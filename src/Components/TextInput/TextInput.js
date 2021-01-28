@@ -18,11 +18,23 @@ function TextInput(props) {
   function onChangeHandler(event) {
     const {value, id} = event.target;
     const trimmedValue = value.trim();
-    // if (!trimmedValue.length) {
-    //   setTextInputStates({...})
-    // }
+    let isFilled, isValid;
 
-    return validate(value, id);
+    if (!trimmedValue.length) {
+      isFilled = false;
+      isValid = true;
+    } else {
+      isFilled = true;
+      isValid = validate(value, id);
+    }
+
+    setTextInputStates({...textInputStates, 
+      [id]: {
+        isFilled,
+        // isValid: textInputStates[inputId].isValid,
+        isValid,
+      }
+    });
   }
 
   return (
