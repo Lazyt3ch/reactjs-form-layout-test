@@ -15,7 +15,6 @@ function TextInput(props) {
 
   const [isFocus, setIsFocus] = useState(false);
 
-  // "Focused" border color works fine in Firefox, but not in Chrome or Vivaldi
   const getInputFieldStyles = () => 
     `registration-form-input-field ${isFocus
       ? "registration-form-input-field-focus"
@@ -23,7 +22,6 @@ function TextInput(props) {
     }`;
 
   function onChangeHandler(event) {
-    console.log("tabIndex =", tabIndex);
     const trimmedValue = event.target.value.trim();
     let isFilled, isValid;
 
@@ -53,8 +51,6 @@ function TextInput(props) {
 
       <input type="text" className={getInputFieldStyles()}
         onChange={onChangeHandler}
-        // onFocus={() => { setIsFocus(true); console.log("focus") } }
-        // onBlur={() => { setIsFocus(false); console.log("blur") } }
         onFocus={() => setIsFocus(true) }
         onBlur={() => setIsFocus(false) }
         placeholder={placeholderText}
