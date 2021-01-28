@@ -11,6 +11,14 @@ const validate = (value, valueType) => {
       // Regex source: https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s01.html
       return /^[a-z0-9+_.-]+@[a-z0-9.-]+$/i.test(value);
     case "phone":
+      const ALLOWED_CHARS = "0123456789()-+";
+      const trimmedValue = value.trim();
+
+      if ( !Array.from(trimmedValue).every( char => ALLOWED_CHARS.includes(char) ) ) {
+        return false;
+      }
+
+
       return true;
     default:
       return true;
