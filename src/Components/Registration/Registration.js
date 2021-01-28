@@ -16,7 +16,8 @@ const languages = [
 ];
 
 function onChangeHandler(event) {
-
+  const {value, id} = event.target;
+  return validate(value, id);
 }
 
 function Registration(props) {
