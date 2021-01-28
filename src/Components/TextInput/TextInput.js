@@ -12,6 +12,8 @@ function TextInput(props) {
 
   const { isValid, isFilled } = props.states;
 
+  const { setTextInputStates } = props;
+
   return (
     <div className="registration-form-input margin-left margin-top">
       <label htmlFor={inputId}>
