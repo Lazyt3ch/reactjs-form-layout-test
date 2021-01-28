@@ -49,7 +49,7 @@ function Registration(props) {
     username: false,
     email: false,
     phone: false,
-  ]});
+  });
 
   const [language, setLanguage] = useState("");
 
