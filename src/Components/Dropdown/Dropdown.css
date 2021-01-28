@@ -68,13 +68,15 @@
 }
 
 .registration-form-dropdown-option {
+    /* position: relative; */
     height: 50px; /* temporary value */
     display: flex;
     align-items: center;
     padding-left: 16px;
 
     /* width: 100%; */
-    width: calc(100% - 60px);    
+    /* width: calc(100% - 60px);     */
+    width: calc(100% - 16px);
 
     font-weight: normal;
     font-size: 16px;
