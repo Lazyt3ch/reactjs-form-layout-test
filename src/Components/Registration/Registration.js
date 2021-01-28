@@ -46,9 +46,9 @@ function Registration(props) {
   ];
 
   const [textInputStates, setTextInputStates] = useState({
-    username: { isValid: false, isFilled: false },
-    email: { isValid: false, isFilled: false },
-    phone: { isValid: false, isFilled: false },
+    username: { isValid: true, isFilled: false },
+    email: { isValid: true, isFilled: false },
+    phone: { isValid: true, isFilled: false },
   });
 
   const [language, setLanguage] = useState("");
