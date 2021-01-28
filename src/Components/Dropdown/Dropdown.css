@@ -22,7 +22,9 @@
     /* width: -webkit-calc(100% - 76px);
     width: -moz-calc(100% - 76px);    
     width: calc(100% - 76px);     */
-    width: 100%;
+    /* width: 100%; */
+    /* width: calc(100% - 60px);     */
+    width: calc(100% - 16px);
 
     border-radius: 6px;    
     border: 1px solid #DBE2EA;
