@@ -3,3 +3,9 @@
     margin-top: 20px;
     margin-bottom: 30px;
 }
+
+.registration-form-dropdown-label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
