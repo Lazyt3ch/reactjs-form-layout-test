@@ -1,0 +1,12 @@
+.registration-form-submit {
+    box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08), 0px 4px 8px rgba(44, 39, 56, 0.08);
+    border-radius: 6px;
+}
+
+.registration-form-submit-disabled {
+    background: #DBE2EA;
+}
+
+.registration-form-submit-enabled {
+    background: #0880AE;
+}
