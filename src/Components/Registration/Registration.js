@@ -70,7 +70,7 @@ function Registration(props) {
   useEffect(() => {
     const submitReadiness = termsAccepted && Object.entries(textInputStates)
       .every( ([key, value]) => value.isFilled && value.isValid);
-      
+
     setIsSubmitReady(submitReadiness);
     },
     [textInputStates, termsAccepted]
@@ -114,7 +114,7 @@ function Registration(props) {
             setTermsAccepted={setTermsAccepted}          
           />
 
-          <div className="checkbox-text">
+          <div className="registration-form-terms-checkbox-text">
             {/* Remember to replace the dummy link! */}
             Принимаю <a href="www.ya.ru" className="link">условия</a> использования
           </div>
