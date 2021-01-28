@@ -1,6 +1,7 @@
 .registration-form-select {
     width: 100%;
-    margin-bottom: 36px;
+    margin-top: 36px;
+    margin-bottom: 39px;
 }
 
 .registration-form-select label {
@@ -25,8 +26,5 @@
     background: #FFFFFF;
     box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
     border-radius: 6px;    
-
-    /* display: block; */
-    /* line-height: 3; */
 }
 
