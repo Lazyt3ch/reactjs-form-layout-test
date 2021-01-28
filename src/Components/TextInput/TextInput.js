@@ -7,7 +7,8 @@ function TextInput(props) {
     placeholderText, 
     inputId, 
     invalidMessage, 
-    onChangeHandler
+    onChangeHandler,
+    isValid,
   } = props.data;
 
   return (
@@ -24,7 +25,7 @@ function TextInput(props) {
 
       <div className="invalid-message">
         {/* TODO: Add message here */}
-        {invalidMessage}
+        { isValid ? "" : invalidMessage }
       </div>
     </div>
   )
