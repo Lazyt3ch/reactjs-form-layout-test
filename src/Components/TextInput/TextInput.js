@@ -13,7 +13,9 @@ function TextInput(props) {
 
   const { textInputStates, setTextInputStates } = props;
 
+
   function onChangeHandler(event) {
+    console.log("tabIndex =", tabIndex);
     const trimmedValue = event.target.value.trim();
     let isFilled, isValid;
 
@@ -43,6 +45,7 @@ function TextInput(props) {
 
       <input type="text" className="registration-form-input-field"
         onChange={onChangeHandler}
+        onFocus={() => console.log("Focus!")}
         placeholder={placeholderText}
         id={inputId}
         tabIndex={tabIndex}
