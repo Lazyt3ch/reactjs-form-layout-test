@@ -53,7 +53,7 @@ function Registration(props) {
     setLanguage,
   };
 
-
+  const [termsAccepted, setTermsAccepted] = useState(false);
 
   return (
     <div className="registration-form-container">
@@ -81,7 +81,8 @@ function Registration(props) {
 
         <div className="registration-form-conditions margin-left margin-top">
           <Checkbox 
-          
+            termsAccepted={termsAccepted}
+            setTermsAccepted={setTermsAccepted}          
           />
 
           <div className="checkbox-text">
