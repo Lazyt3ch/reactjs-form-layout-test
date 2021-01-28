@@ -79,13 +79,13 @@ function Registration(props) {
           data={selectData}
         />
 
-        <div className="registration-form-conditions margin-left">
+        <div className="registration-form-conditions margin-left margin-top">
           <Checkbox 
           
           />
 
           {/* <span>Принимаю <a href="#">условия</a> использования</span> */}
-          <span>Принимаю <strong>условия</strong> использования</span>
+          <div className="checkbox-text">Принимаю <strong>условия</strong> использования</div>
         </div>
 
       </form>

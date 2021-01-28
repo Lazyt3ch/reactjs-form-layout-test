@@ -38,3 +38,9 @@
 .margin-top {
     margin-top: 20px;
 }
+
+.checkbox-text {
+    display: inline-block;
+    height: 28px;
+    padding-left: 4px;
+}
