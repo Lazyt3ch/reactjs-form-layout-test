@@ -15,10 +15,10 @@ const languages = [
   "Испанский"
 ];
 
-function onChangeHandler(event) {
-  const {value, id} = event.target;
-  return validate(value, id);
-}
+// function onChangeHandler(event) {
+//   const {value, id} = event.target;
+//   return validate(value, id);
+// }
 
 function Registration(props) {
   const textInputData = [
@@ -27,21 +27,21 @@ function Registration(props) {
       labelText: "Имя",
       placeholderText: "Введите ваше имя",
       invalidMessage,
-      onChangeHandler,
+      // onChangeHandler,
     },
     {
       inputId: "email",
       labelText: "Email",
       placeholderText: "Введите ваш email",
       invalidMessage,
-      onChangeHandler,
+      // onChangeHandler,
     },
     {
       inputId: "phone",
       labelText: "Номер телефона",
       placeholderText: "Введите номер телефона",
       invalidMessage,
-      onChangeHandler,
+      // onChangeHandler,
     },  
   ];
 
