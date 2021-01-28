@@ -17,6 +17,11 @@ function TextInput(props) {
 
   function onChangeHandler(event) {
     const {value, id} = event.target;
+    const trimmedValue = value.trim();
+    // if (!trimmedValue.length) {
+    //   setTextInputStates({...})
+    // }
+
     return validate(value, id);
   }
 
