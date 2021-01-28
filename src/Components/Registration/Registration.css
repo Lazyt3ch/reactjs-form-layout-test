@@ -8,7 +8,7 @@
     left: 0px;
     width: 460px;
     min-width: 360px;
-    /* height: 789px; */
+    height: 789px;
 }
 
 .registration-form {
@@ -19,10 +19,6 @@
     background-color: white; /* temporary color */
     padding-top: 40px;
 }
-
-/* .registration-form-header {
-    margin-top: 40px;
-} */
 
 .registration-form-title {        
     font-size: 34px;
