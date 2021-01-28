@@ -68,9 +68,9 @@ function Registration(props) {
   const [isSubmitReady, setIsSubmitReady] = useState(false);
 
   useEffect(() => {
-      const submitReadiness = Object.entries(textInputStates).every( ([key, value]) => 
-        value.isFilled && value.isValid);
-      setIsSubmitReady(submitReadiness);
+    const submitReadiness = Object.entries(textInputStates)
+      .every( ([key, value]) => value.isFilled && value.isValid);
+    setIsSubmitReady(submitReadiness);
     },
     [textInputStates]
   );
