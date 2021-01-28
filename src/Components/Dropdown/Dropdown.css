@@ -1,4 +1,5 @@
 .registration-form-dropdown {
+    position: relative;
     width: 100%;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -42,6 +43,7 @@
 }
 
 .registration-form-dropdown-list {
+    position: absolute;
     width: -webkit-calc(100% - 76px);
     width: -moz-calc(100% - 76px);    
     width: calc(100% - 76px);    
@@ -61,6 +63,10 @@
     display: flex;
     align-items: center;
     padding-left: 16px;
+
+    font-weight: normal;
+    font-size: 16px;
+    color: #756F86;    
 }
 
 /* Also add backup styles for non-hoverable mobile devices */
