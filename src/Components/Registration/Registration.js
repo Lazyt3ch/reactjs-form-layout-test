@@ -27,21 +27,21 @@ function Registration(props) {
       labelText: "Имя",
       placeholderText: "Введите ваше имя",
       invalidMessage,
-      // onChangeHandler,
+      tabIndex: 1,
     },
     {
       inputId: "email",
       labelText: "Email",
       placeholderText: "Введите ваш email",
       invalidMessage,
-      // onChangeHandler,
+      tabIndex: 2,
     },
     {
       inputId: "phone",
       labelText: "Номер телефона",
       placeholderText: "Введите номер телефона",
       invalidMessage,
-      // onChangeHandler,
+      tabIndex: 3,
     },  
   ];
 
