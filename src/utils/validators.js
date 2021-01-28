@@ -23,7 +23,7 @@ const validate = (value, valueType) => {
       }
 
       if ( trimmedChars.filter( char => "0123456789".includes(char) ).length !== 11 ) {
-        return false; // Maximum allowed number of digits is 11
+        return false; // 11 digits allowed
       }
 
       return true;
