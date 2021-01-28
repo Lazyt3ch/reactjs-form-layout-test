@@ -38,9 +38,10 @@
 }
 
 .invalid-message {
+    height: 18px;
     font-size: 14px;
     font-weight: normal;
-    line-height: 18px;
+    /* line-height: 18px; */
     color: #FF7171;
     margin-top: 8px;
     margin-bottom: 8px;
