@@ -46,4 +46,11 @@
 .checkbox-text {
     align-self: center;
     padding-left: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #756F86;
+}
+
+.link {
+    color: #0880AE;
 }

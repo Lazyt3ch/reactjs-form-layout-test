@@ -84,8 +84,9 @@ function Registration(props) {
           
           />
 
-          {/* <span>Принимаю <a href="#">условия</a> использования</span> */}
-          <div className="checkbox-text">Принимаю <strong>условия</strong> использования</div>
+          <div className="checkbox-text">
+            Принимаю <a href="www.ya.ru" className="link">условия</a> использования
+          </div>
         </div>
 
       </form>
