@@ -26,7 +26,6 @@ const validate = (value, valueType) => {
         return false; // Maximum allowed number of digits is 11
       }
 
-
       return true;
     default:
       return true;
