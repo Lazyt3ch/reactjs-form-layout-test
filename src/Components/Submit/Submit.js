@@ -11,7 +11,7 @@ function Submit(props) {
   
   return (
     <div className={getSubmitClasses()}>
-        Зарегистрироваться
+        <div>Зарегистрироваться</div>
     </div>
   );
 }
