@@ -35,7 +35,7 @@ function TextInput(props) {
     });
   }
 
-  const [isFilled, isValid] = textInputStates[inputId];
+  const {isFilled, isValid} = textInputStates[inputId];
 
   return (
     <div className="registration-form-input margin-left margin-top">
