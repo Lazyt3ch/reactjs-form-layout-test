@@ -1,4 +1,5 @@
 .registration-form-checkbox {
+    display: inline-block;
     height: 28px;
     width: 28px;
     background: #FFFFFF;
