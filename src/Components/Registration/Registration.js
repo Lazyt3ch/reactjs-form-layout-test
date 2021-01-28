@@ -45,6 +45,21 @@ function Registration(props) {
     },  
   ];
 
+  const textInputValidities = useState([
+    { 
+      inputId: "username",
+      isValid: false,
+    },
+    {
+      inputId: "email",
+      isValid: false,
+    },
+    {
+      inputId: "phone",
+      isValid: false,
+    },  
+  ]);
+
   const [language, setLanguage] = useState("");
 
   const selectData = {
