@@ -17,17 +17,19 @@
     width: -moz-calc(100% - 76px);    
     width: calc(100% - 76px);    
     border-radius: 6px;    
-    border: 1px solid #DBE2EA;
+    background-color: #FFFFFF;
     color: #2C2738;
     box-shadow: 0px 4px 8px 0px #2C2738 4%;
     font-size: 16px;
     font-weight: 400;
 }
 
-.registration-form-input-field:focus {
-    background-color: #FFFFFF;
+.registration-form-input-field-no-focus {
+    border: 1px solid #DBE2EA;
+}
+
+.registration-form-input-field-focus {
     border: 2px solid #0880AE; 
-    box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
 }
 
 .registration-form-input-field::placeholder {
