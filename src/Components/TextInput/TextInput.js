@@ -15,7 +15,7 @@ function TextInput(props) {
 
   const [isFocus, setIsFocus] = useState(false);
 
-  // "Focused" border color works fine in Firefox, but not in Chrome-like Vivaldi
+  // "Focused" border color works fine in Firefox, but not in Chrome or Vivaldi
   const getInputFieldStyles = () => 
     `registration-form-input-field ${isFocus
       ? "registration-form-input-field-focus"
