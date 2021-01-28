@@ -16,8 +16,7 @@ function TextInput(props) {
   const { textInputStates, setTextInputStates } = props;
 
   function onChangeHandler(event) {
-    const {value, id} = event.target;
-    const trimmedValue = value.trim();
+    const trimmedValue = event.target.value.trim();
     let isFilled, isValid;
 
     if (!trimmedValue.length) {
@@ -25,11 +24,11 @@ function TextInput(props) {
       isValid = true;
     } else {
       isFilled = true;
-      isValid = validate(value, id);
+      isValid = validate(trimmedValue, inputId);
     }
 
     setTextInputStates({...textInputStates, 
-      [id]: {
+      [inputId]: {
         isFilled,
         isValid,
       }
