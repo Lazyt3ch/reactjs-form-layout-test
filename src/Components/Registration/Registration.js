@@ -67,6 +67,14 @@ function Registration(props) {
   // eslint-disable-next-line
   const [isSubmitReady, setIsSubmitReady] = useState(false);
 
+  useEffect(() => {
+      const submitReadiness = Object.entries(textInputStates).every( ([key, value]) => 
+        value.isFilled && value.isValid);
+      setIsSubmitReady(submitReadiness);
+    },
+    [textInputStates]
+  );
+
 
 
   const submit = () => {
