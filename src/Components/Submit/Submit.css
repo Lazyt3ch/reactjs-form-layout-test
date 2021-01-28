@@ -6,14 +6,20 @@
     border-radius: 6px;
     height: 56px;
     width: 400px;
+
+    font-weight: 500;
+    font-size: 16px;
+
     margin-top: 40px;
     margin-bottom: 25px;
 }
 
 .registration-form-submit-disabled {
     background: #DBE2EA;
+    color: #B1B5BF;    
 }
 
 .registration-form-submit-enabled {
     background: #0880AE;
+    color: #EBF4F8;    
 }
