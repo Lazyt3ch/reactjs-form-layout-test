@@ -56,6 +56,8 @@ function Registration(props) {
 
   const [termsAccepted, setTermsAccepted] = useState(false);
 
+  const [isSubmitReady, setIsSubmitReady] = useState(false);
+
   const submit = () => {
 
   };
@@ -97,7 +99,7 @@ function Registration(props) {
         </div>
 
         <Submit 
-          termsAccepted={termsAccepted}
+          isSubmitReady={isSubmitReady}
           submit={submit}
         />        
 
