@@ -12,9 +12,8 @@ const validate = (value, valueType) => {
       return /^[a-z0-9+_.-]+@[a-z0-9.-]+$/i.test(value);
     case "phone":
       const ALLOWED_CHARS = "0123456789()-+";
-      const trimmedValue = value.trim();
-
-      if ( !Array.from(trimmedValue).every( char => ALLOWED_CHARS.includes(char) ) ) {
+      const chars = Array.from(value.trim());
+      if ( !chars.every( char => ALLOWED_CHARS.includes(char) ) ) {
         return false;
       }
 
