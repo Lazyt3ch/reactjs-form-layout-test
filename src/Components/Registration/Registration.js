@@ -56,6 +56,7 @@ function Registration(props) {
 
   const [termsAccepted, setTermsAccepted] = useState(false);
 
+  // eslint-disable-next-line
   const [isSubmitReady, setIsSubmitReady] = useState(false);
 
   const submit = () => {
