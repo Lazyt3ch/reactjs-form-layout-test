@@ -25,6 +25,10 @@ function Dropdown(props) {
   
   return (
     <div className="registration-form-dropdown margin-left margin-top">
+      <div>
+        {labelText}
+      </div>      
+      
       <div className="registration-form-dropdown-box"
         onClick={openDropdown}
       >
