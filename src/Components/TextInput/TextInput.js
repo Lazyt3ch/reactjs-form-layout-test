@@ -52,7 +52,7 @@ function TextInput(props) {
       />
 
       <div className="invalid-message">
-        { isFilled && !isValid ? invalidMessage : "" }
+        { isFilled && !isValid ? invalidMessage : " " }
       </div>
     </div>
   )
