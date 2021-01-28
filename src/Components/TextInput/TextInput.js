@@ -10,7 +10,7 @@ function TextInput(props) {
     onChangeHandler,
   } = props.data;
 
-  const { isValid } = props;
+  const { isValid, isFilled } = props.states;
 
   return (
     <div className="registration-form-input margin-left margin-top">
@@ -26,7 +26,7 @@ function TextInput(props) {
 
       <div className="invalid-message">
         {/* TODO: Add message here */}
-        { isValid ? "" : invalidMessage }
+        { isValid || isFilled ? "" : invalidMessage }
       </div>
     </div>
   )
