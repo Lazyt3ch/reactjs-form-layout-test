@@ -88,6 +88,7 @@ function Registration(props) {
           <TextInput 
             key={data.inputId} 
             data={data}
+            isValid={textInputValidities[data.inputId]}
           />
         )}
 
