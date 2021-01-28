@@ -3,6 +3,7 @@ import "./Registration.css";
 import TextInput from "../TextInput/TextInput.js";
 import Select from "../Select/Select.js";
 import Checkbox from "../Checkbox/Checkbox.js";
+import Submit from "../Submit/Submit.js";
 
 const invalidMessage = "Введено некорректное значение";
 
@@ -55,6 +56,10 @@ function Registration(props) {
 
   const [termsAccepted, setTermsAccepted] = useState(false);
 
+  const submit = () => {
+
+  };
+
   return (
     <div className="registration-form-container">
       <form action="" className="registration-form">
@@ -90,6 +95,11 @@ function Registration(props) {
             Принимаю <a href="www.ya.ru" className="link">условия</a> использования
           </div>
         </div>
+
+        <Submit 
+          termsAccepted={termsAccepted}
+          submit={submit}
+        />        
 
       </form>
     </div>
