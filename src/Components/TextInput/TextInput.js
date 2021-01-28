@@ -1,5 +1,6 @@
 import React from 'react';
 import "./TextInput.css";
+import validate from "../../utils/validators.js";
 
 function TextInput(props) {
   const {
