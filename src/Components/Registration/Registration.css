@@ -39,8 +39,11 @@
     margin-top: 20px;
 }
 
+.registration-form-conditions {
+    display: flex;
+}
+
 .checkbox-text {
-    display: inline-block;
-    height: 28px;
-    padding-left: 4px;
+    align-self: center;
+    padding-left: 8px;
 }
