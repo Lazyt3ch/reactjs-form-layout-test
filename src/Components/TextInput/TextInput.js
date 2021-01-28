@@ -52,8 +52,8 @@ function TextInput(props) {
 
       <input type="text" className={getInputFieldStyles()}
         onChange={onChangeHandler}
-        onFocus={() => setIsFocus(true)}
-        onBlur={() => setIsFocus(false)}
+        onFocus={() => { setIsFocus(true); console.log("focus") } }
+        onBlur={() => { setIsFocus(false); console.log("blur") } }
         placeholder={placeholderText}
         id={inputId}
         tabIndex={tabIndex}
