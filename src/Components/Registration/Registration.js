@@ -90,7 +90,7 @@ function Registration(props) {
           <TextInput 
             key={data.inputId} 
             data={data}
-            states={textInputStates[data.inputId]}
+            textInputStates={textInputStates}
             setTextInputStates={setTextInputStates}
           />
         )}
