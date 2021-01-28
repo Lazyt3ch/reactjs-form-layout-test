@@ -1,6 +1,6 @@
 .registration-form-input {
     width: 100%;
-    margin-bottom: 33px;
+    /* margin-bottom: 33px; */
 }
 
 .registration-form-input label {
@@ -32,7 +32,7 @@
 
 .invalid-message {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: normal;
     line-height: 18px;
     color: #FF7171;
     margin-top: 8px;
