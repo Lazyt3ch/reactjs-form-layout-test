@@ -53,4 +53,12 @@
 
 .registration-form-dropdown-option {
     height: 50px; /* temporary value */
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+}
+
+/* Also add backup styles for non-hoverable mobile devices */
+.registration-form-dropdown-option:hover {
+    background-color: #EBF4F8;
 }
