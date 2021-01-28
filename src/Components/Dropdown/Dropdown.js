@@ -19,16 +19,7 @@ function Dropdown(props) {
   
   return (
     <div className="registration-form-select margin-left margin-top">
-      <label htmlFor={selectId}>
-        {labelText}
-      </label>
 
-      <select id={selectId} value={language}
-        onChange={handleChange}
-      >
-        {extendedOptions.map((o, idx) => 
-          <option key={o} style={getOptionStyles(idx)}>{o}</option>)}
-      </select>
     </div>
   )
 }
