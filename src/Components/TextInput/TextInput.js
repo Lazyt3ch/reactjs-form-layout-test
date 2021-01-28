@@ -8,8 +8,9 @@ function TextInput(props) {
     inputId, 
     invalidMessage, 
     onChangeHandler,
-    isValid,
   } = props.data;
+
+  const { isValid } = props;
 
   return (
     <div className="registration-form-input margin-left margin-top">
