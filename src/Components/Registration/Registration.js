@@ -91,6 +91,7 @@ function Registration(props) {
             key={data.inputId} 
             data={data}
             states={textInputStates[data.inputId]}
+            setTextInputStates={setTextInputStates}
           />
         )}
 
