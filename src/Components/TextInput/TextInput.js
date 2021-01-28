@@ -13,7 +13,7 @@ function TextInput(props) {
 
   // const { isValid, isFilled } = props.states;
 
-  const { states, setTextInputStates } = props;
+  const { textInputStates, setTextInputStates } = props;
 
   function onChangeHandler(event) {
     const {value, id} = event.target;
