@@ -45,6 +45,7 @@
 
 .registration-form-terms {
     display: flex;
+    height: 28px;
 }
 
 .checkbox-text {
