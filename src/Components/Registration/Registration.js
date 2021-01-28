@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import "./Registration.css";
 import TextInput from "../TextInput/TextInput.js";
 import Select from "../Select/Select.js";
+import Dropdown from "../Dropdown/Dropdown.js";
 import Checkbox from "../Checkbox/Checkbox.js";
 import Submit from "../Submit/Submit.js";
 // import validate from "../../utils/validators.js";
