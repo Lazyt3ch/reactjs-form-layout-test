@@ -31,11 +31,12 @@ function TextInput(props) {
     setTextInputStates({...textInputStates, 
       [id]: {
         isFilled,
-        // isValid: textInputStates[inputId].isValid,
         isValid,
       }
     });
   }
+
+  const [isFilled, isValid] = textInputStates[inputId];
 
   return (
     <div className="registration-form-input margin-left margin-top">
@@ -50,7 +51,6 @@ function TextInput(props) {
       />
 
       <div className="invalid-message">
-        {/* TODO: Add message here */}
         { isValid || isFilled ? "" : invalidMessage }
       </div>
     </div>
