@@ -22,6 +22,27 @@ function Dropdown(props) {
     return "#2C2738";
   }
 
+  const getDropdownBoxBorder = () => {
+    return isDropdownOpen
+      ? "border: 2px solid #0880AE"
+      : "1px solid #DBE2EA";
+
+    /*
+      CLOSED:
+      border: 1px solid #DBE2EA;
+      box-sizing: border-box;
+      box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+      border-radius: 6px;
+
+      OPEN:
+      border: 2px solid #0880AE;
+      box-sizing: border-box;
+      box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+      border-radius: 6px;
+
+    */
+  }  
+
   const handleOptionClick = (e) => {
     setLanguage(e.target.innerHTML);
     setIsDropdownOpen(false);
@@ -40,7 +61,7 @@ function Dropdown(props) {
       </div>      
 
       <div className="registration-form-dropdown-box"
-        style={{ color: getDropdownBoxColor() }}
+        style={{ color: getDropdownBoxColor(), border: getDropdownBoxBorder() }}
         onClick={openDropdown}
       >
         <div>

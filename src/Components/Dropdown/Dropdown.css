@@ -19,11 +19,6 @@
     height: 52px;
     padding-left: 16px;
 
-    /* width: -webkit-calc(100% - 76px);
-    width: -moz-calc(100% - 76px);    
-    width: calc(100% - 76px);     */
-    /* width: 100%; */
-    /* width: calc(100% - 60px);     */
     width: calc(100% - 16px);
 
     border-radius: 6px;    
