@@ -3,7 +3,6 @@ import "./Dropdown.css";
 
 function Dropdown(props) {
   const {
-    // selectId, 
     labelText, 
     initialValue, 
     languages, 
