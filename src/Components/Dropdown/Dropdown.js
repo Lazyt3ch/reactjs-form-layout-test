@@ -13,7 +13,7 @@ function Dropdown(props) {
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const getDropdownBoxColor = () => {
+  const getDropdownBoxFontColor = () => {
     return (!isDropdownOpen && language === "") 
       ? "#7C9CBF"
       : "#2C2738";
@@ -41,7 +41,7 @@ function Dropdown(props) {
       </div>      
 
       <div className="registration-form-dropdown-box"
-        style={{ color: getDropdownBoxColor(), border: getDropdownBoxBorder() }}
+        style={{ color: getDropdownBoxFontColor(), border: getDropdownBoxBorder() }}
         onClick={openDropdown}
       >
         <div>
