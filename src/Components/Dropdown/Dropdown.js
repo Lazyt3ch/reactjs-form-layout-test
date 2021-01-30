@@ -12,9 +12,6 @@ function Dropdown(props) {
     setLanguage, 
   } = props.data;
 
-  // eslint-disable-next-line
-  let extendedOptions = [initialValue, ...languages];
-
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const getDropdownBoxColor = () => {
@@ -26,8 +23,8 @@ function Dropdown(props) {
   }
 
   const handleOptionClick = (e) => {
-    console.log("option click");
-    setLanguage(e.target.value);
+    setLanguage(e.target.innerHTML);
+    setIsDropdownOpen(false);
   };
 
   const openDropdown = (e) => {
@@ -47,7 +44,7 @@ function Dropdown(props) {
         onClick={openDropdown}
       >
         <div>
-          {initialValue}
+          {language || initialValue}
         </div>
 
         <div className="registration-form-dropdown-button">
