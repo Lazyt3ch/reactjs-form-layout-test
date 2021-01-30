@@ -2,7 +2,7 @@ import React from 'react';
 import "./Submit.css";
 
 function Submit(props) {
-  const {isSubmitReady} = props;     
+  const {isSubmitReady, handleSubmit} = props;     
   
   const getSubmitClasses = () => 
     `registration-form-submit margin-left ${isSubmitReady 
@@ -10,7 +10,9 @@ function Submit(props) {
       : "registration-form-submit-disabled"}`;
   
   return (
-    <div className={getSubmitClasses()}>
+    <div className={getSubmitClasses()}
+      onClick={handleSubmit}
+    >
         Зарегистрироваться
     </div>
   );
