@@ -69,13 +69,11 @@
 
 .registration-form-dropdown-option {
     /* position: relative; */
-    height: 50px; /* temporary value */
+    height: 44px; 
     display: flex;
     align-items: center;
     padding-left: 16px;
 
-    /* width: 100%; */
-    /* width: calc(100% - 60px);     */
     width: calc(100% - 16px);
 
     font-weight: normal;
@@ -83,7 +81,7 @@
     color: #756F86;    
 }
 
-/* Also add backup styles for non-hoverable mobile devices */
+/* Also add backup styles for non-hoverable mobile devices? */
 .registration-form-dropdown-option:hover {
     background-color: #EBF4F8;
 }
