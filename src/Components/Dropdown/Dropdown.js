@@ -24,23 +24,8 @@ function Dropdown(props) {
 
   const getDropdownBoxBorder = () => {
     return isDropdownOpen
-      ? "border: 2px solid #0880AE"
+      ? "2px solid #0880AE"
       : "1px solid #DBE2EA";
-
-    /*
-      CLOSED:
-      border: 1px solid #DBE2EA;
-      box-sizing: border-box;
-      box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
-      border-radius: 6px;
-
-      OPEN:
-      border: 2px solid #0880AE;
-      box-sizing: border-box;
-      box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
-      border-radius: 6px;
-
-    */
   }  
 
   const handleOptionClick = (e) => {
