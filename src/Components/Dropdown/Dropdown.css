@@ -3,6 +3,7 @@
     width: calc(100% - 60px);    
     margin-top: 10px;
     margin-bottom: 30px;
+    font-family: "IBM Plex Sans", sans-serif;
 }
 
 .registration-form-dropdown-label {
