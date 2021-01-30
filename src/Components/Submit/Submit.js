@@ -14,7 +14,7 @@ function Submit(props) {
       disabled={!isSubmitReady}
       onClick={handleSubmit}
     >
-        Зарегистрироваться
+      Зарегистрироваться
     </button>
   );
 }
