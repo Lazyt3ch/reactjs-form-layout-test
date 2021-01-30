@@ -5,9 +5,9 @@ function Submit(props) {
   const {isSubmitReady, handleSubmit} = props;     
   
   const getSubmitClasses = () => 
-    `registration-form-submit margin-left ${isSubmitReady 
-      ? "registration-form-submit-enabled"
-      : "registration-form-submit-disabled"}`;
+    `registration-form__submit margin-left ${isSubmitReady 
+      ? "registration-form__submit_enabled"
+      : "registration-form__submit_disabled"}`;
   
   return (
     <button type="button" className={getSubmitClasses()}

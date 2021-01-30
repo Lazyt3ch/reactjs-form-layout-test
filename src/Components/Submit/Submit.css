@@ -1,4 +1,4 @@
-.registration-form-submit {
+.registration-form__submit {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,12 +16,12 @@
     outline: 0px transparent !important;
 }
 
-.registration-form-submit-disabled {
+.registration-form__submit_disabled {
     background: #DBE2EA;
     color: #B1B5BF;    
 }
 
-.registration-form-submit-enabled {
+.registration-form__submit_enabled {
     background: #0880AE;
     color: #EBF4F8;    
 }
