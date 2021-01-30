@@ -1,4 +1,5 @@
 .registration-form-checkbox-wrapper {
+    /* Prevents visible shifting of the text located at the right of Checkbox */
     height: 28px;
     width: 28px;
 }
