@@ -83,7 +83,7 @@ function Registration(props) {
 
         <div className="registration-form-text margin-left">
           {/* TODO: Replace the dummy link! */}
-          <span>Уже есть аккаунт?</span> <a href="www.ya.ru" className="link">Войти</a>
+          <span>Уже есть аккаунт?</span> <a href="login" className="link">Войти</a>
         </div>
 
         {textInputData.map((data) => 
@@ -107,7 +107,7 @@ function Registration(props) {
 
           <div className="registration-form-terms-checkbox-text">
             {/* TODO: Replace the dummy link! */}
-            Принимаю <a href="www.ya.ru" className="link">условия</a> использования
+            Принимаю <a href="terms" className="link">условия</a> использования
           </div>
         </div>
 
