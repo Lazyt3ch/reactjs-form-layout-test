@@ -48,7 +48,6 @@ function Registration(props) {
   const [language, setLanguage] = useState("");
 
   const selectData = {
-    // selectId: "language",
     labelText: "Язык",
     initialValue: "Язык",
     languages,
@@ -83,7 +82,7 @@ function Registration(props) {
         </div>
 
         <div className="registration-form-text margin-left">
-          {/* Remember to replace the dummy link! */}
+          {/* TODO: Replace the dummy link! */}
           <span>Уже есть аккаунт?</span> <a href="www.ya.ru" className="link">Войти</a>
         </div>
 
@@ -107,7 +106,7 @@ function Registration(props) {
           />
 
           <div className="registration-form-terms-checkbox-text">
-            {/* Remember to replace the dummy link! */}
+            {/* TODO: Replace the dummy link! */}
             Принимаю <a href="www.ya.ru" className="link">условия</a> использования
           </div>
         </div>
