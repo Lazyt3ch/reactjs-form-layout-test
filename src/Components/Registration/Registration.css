@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+/* Otherwise Chrome might add a black border on focus */
+*, *:focus, *:hover {
+    outline: none;
+}
+
 .registration-form-container {
     top: 0px;
     left: 0px;
