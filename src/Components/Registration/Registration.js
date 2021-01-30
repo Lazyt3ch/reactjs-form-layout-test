@@ -99,7 +99,7 @@ function Registration(props) {
           data={selectData}
         />        
 
-        <div className="registration-form-terms margin-left margin-top">
+        <div className="registration-form-terms margin-left">
           <Checkbox 
             termsAccepted={termsAccepted}
             setTermsAccepted={setTermsAccepted}          
