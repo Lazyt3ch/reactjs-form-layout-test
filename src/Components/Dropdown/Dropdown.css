@@ -20,12 +20,16 @@
     width: calc(100% - 16px);
     border: 1px solid #DBE2EA;
     border-radius: 6px;    
-    font-size: 16px;
-    font-weight: 400;
     background: #FFFFFF;
     box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
     display: flex;
     align-items: center;    
+}
+
+.registration-form-dropdown-box-content {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .registration-form-dropdown-button {
