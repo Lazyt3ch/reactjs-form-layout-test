@@ -12,10 +12,8 @@
 }
 
 .registration-form-input-field {
-    height: 52px;
     padding-left: 16px;
-    width: -webkit-calc(100% - 76px);
-    width: -moz-calc(100% - 76px);    
+    height: 52px;
     width: calc(100% - 76px);    
     border-radius: 6px;    
     background-color: #FFFFFF;
@@ -23,7 +21,6 @@
     box-shadow: 0px 4px 8px 0px #2C2738 4%;
     font-size: 16px;
     font-weight: 400;
-    outline: none !important; /* Otherwise Chrome adds a black border on focus */
 }
 
 .registration-form-input-field-no-focus {
