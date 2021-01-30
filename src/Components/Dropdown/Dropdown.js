@@ -47,7 +47,7 @@ function Dropdown(props) {
         </div>
       </div>
 
-      <div class="registration-form-dropdown-list">
+      <div className="registration-form-dropdown-list">
         {languages.map( (lang) => (
           <div className="registration-form-dropdown-option"
             key={lang}
