@@ -15,11 +15,9 @@ function Dropdown(props) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const getDropdownBoxColor = () => {
-    if (!isDropdownOpen && language === "") {
-      return "#7C9CBF";
-    }
-
-    return "#2C2738";
+    return (!isDropdownOpen && language === "") 
+      ? "#7C9CBF"
+      : "#2C2738";
   }
 
   const getDropdownBoxBorder = () => {
@@ -37,8 +35,6 @@ function Dropdown(props) {
     setIsDropdownOpen( prevState => !prevState );    
   };
 
-  // Custom dropdown example: https://www.w3schools.com/howto/howto_js_dropdown.asp
-  
   return (
     <div className="registration-form-dropdown margin-left margin-top">
       <div className="registration-form-dropdown-label">
