@@ -58,7 +58,7 @@ function TextInput(props) {
         tabIndex={tabIndex}
       />
 
-      <div className="invalid-message">
+      <div className="registration-form__input__invalid-message">
         { isFilled && !isValid ? invalidMessage : "\u00A0" }
       </div>
     </div>

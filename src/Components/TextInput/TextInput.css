@@ -37,7 +37,7 @@
     color: #7C9CBF;
 }
 
-.invalid-message {
+.registration-form__input__invalid-message {
     height: 18px;
     font-size: 14px;
     font-weight: normal;
