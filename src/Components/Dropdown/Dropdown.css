@@ -31,7 +31,7 @@
 
     font-weight: normal;
     font-size: 16px;
-    color: #2C2738;
+    color: #2C2738; /* Font color depends both on box content and dropdown open/close status */
     box-shadow: 0px 4px 8px 0px #2C2738 4%;
     font-size: 16px;
     font-weight: 400;
