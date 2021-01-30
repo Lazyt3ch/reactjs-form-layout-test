@@ -17,17 +17,13 @@
     height: 52px;
     padding-left: 16px;
     width: calc(100% - 16px);
-    border-radius: 6px;    
     border: 1px solid #DBE2EA;
+    border-radius: 6px;    
     font-size: 16px;
-
-    font-weight: normal;
     font-weight: 400;
-
     box-shadow: 0px 4px 8px 0px #2C2738 4%;
     background: #FFFFFF;
     box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
-    border-radius: 6px;    
     display: flex;
     align-items: center;    
 }
