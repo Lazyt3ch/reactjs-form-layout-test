@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;    
 }
 
 /* Otherwise Chrome might add a black border on focus */
