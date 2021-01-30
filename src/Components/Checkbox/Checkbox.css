@@ -1,9 +1,5 @@
 .registration-form-checkbox {
     display: inline-block;
-    /* display: flex;
-    align-items: center;
-    justify-items: center; */
-
     background: #FFFFFF;
     border-radius: 4px;
     box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);

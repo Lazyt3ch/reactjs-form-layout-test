@@ -1,7 +1,6 @@
 import React from 'react';
 import "./Checkbox.css";
 
-
 function Checkbox(props) {
   const {termsAccepted, setTermsAccepted} = props;     
   
