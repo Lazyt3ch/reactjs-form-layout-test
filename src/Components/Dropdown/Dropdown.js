@@ -24,7 +24,7 @@ function Dropdown(props) {
   };
 
   const openDropdown = (e) => {
-    console.log("dropdown opening or closing");
+    // console.log("dropdown opening or closing");
     setIsDropdownOpen( prevState => !prevState );    
   };
 
@@ -50,7 +50,9 @@ function Dropdown(props) {
         </div>
       </div>
 
-      <div className="registration-form-dropdown-list">
+      <div className="registration-form-dropdown-list"
+        style={{display: (isDropdownOpen ? "block" : "none")}}
+      >
         {languages.map( (lang) => (
           <div className="registration-form-dropdown-option"
             key={lang}
