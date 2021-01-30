@@ -16,9 +16,9 @@ function TextInput(props) {
   const [isFocus, setIsFocus] = useState(false);
 
   const getInputFieldStyles = () => 
-    `registration-form-input-field ${isFocus
-      ? "registration-form-input-field-focus"
-      : "registration-form-input-field-no-focus"
+    `registration-form__input__field ${isFocus
+      ? "registration-form__input__field_focus"
+      : "registration-form__input__field_no-focus"
     }`;
 
   function onChangeHandler(event) {
@@ -44,7 +44,7 @@ function TextInput(props) {
   const {isFilled, isValid} = textInputStates[inputId];
 
   return (
-    <div className="registration-form-input margin-left">
+    <div className="registration-form__input margin-left">
       <label htmlFor={inputId}>
         {labelText}
       </label>
