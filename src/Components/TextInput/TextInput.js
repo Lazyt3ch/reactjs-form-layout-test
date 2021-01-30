@@ -44,7 +44,7 @@ function TextInput(props) {
   const {isFilled, isValid} = textInputStates[inputId];
 
   return (
-    <div className="registration-form-input margin-left margin-top">
+    <div className="registration-form-input margin-left">
       <label htmlFor={inputId}>
         {labelText}
       </label>
