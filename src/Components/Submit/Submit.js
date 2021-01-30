@@ -10,11 +10,11 @@ function Submit(props) {
       : "registration-form-submit-disabled"}`;
   
   return (
-    <div className={getSubmitClasses()}
+    <button type="button" className={getSubmitClasses()}
       onClick={handleSubmit}
     >
         Зарегистрироваться
-    </div>
+    </button>
   );
 }
 
