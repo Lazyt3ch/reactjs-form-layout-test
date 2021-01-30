@@ -31,6 +31,10 @@ function Dropdown(props) {
     setLanguage(e.target.value);
   };
 
+  const handleOptionClick = (e) => {
+    setLanguage(e.target.value);
+  };
+
   const openDropdown = (e) => {
     // console.log("dropdown opening or closing");
     setIsDropdownOpen( prevState => !prevState );    
@@ -65,6 +69,7 @@ function Dropdown(props) {
         {languages.map( (lang) => (
           <div className="registration-form-dropdown-option"
             key={lang}
+            onClick={handleOptionClick}
           >
             {lang}
           </div>
