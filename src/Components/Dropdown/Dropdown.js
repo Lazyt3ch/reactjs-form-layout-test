@@ -34,7 +34,7 @@ function Dropdown(props) {
   };
 
   return (
-    <div className="registration-form__dropdown margin-left">
+    <div className="registration-form__dropdown registration-form_margin-left">
       <div className="registration-form__dropdown__label">
         {labelText}
       </div>      

@@ -77,11 +77,11 @@ function Registration(props) {
     <div className="registration-form__container">
       <form action="" className="registration-form">
 
-        <div className="registration-form__header margin-left">
+        <div className="registration-form__header registration-form_margin-left">
           <p className="registration-form__title">Регистрация</p>
         </div>
 
-        <div className="registration-form__text margin-left">
+        <div className="registration-form__text registration-form_margin-left">
           {/* TODO: Replace the dummy link! */}
           <span>Уже есть аккаунт?</span> <a href="login" className="link">Войти</a>
         </div>
