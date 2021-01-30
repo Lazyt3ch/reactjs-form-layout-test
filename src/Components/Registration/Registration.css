@@ -11,7 +11,7 @@
     outline: none;
 }
 
-.registration-form-container {
+.registration-form__container {
     top: 0px;
     left: 0px;
     width: 460px;
@@ -28,14 +28,14 @@
     padding-top: 40px;
 }
 
-.registration-form-title {        
+.registration-form__title {        
     font-size: 34px;
     font-weight: 700;
     color: black;
     line-height: 44px;
 }
 
-.registration-form-text {
+.registration-form__text {
     margin-bottom: 58px;
 }
 
@@ -47,12 +47,12 @@
     margin-top: 20px;
 }
 
-.registration-form-terms {
+.registration-form__terms {
     display: flex;
     height: 28px;
 }
 
-.registration-form-terms-checkbox-text {
+.registration-form__terms__checkbox-text {
     align-self: center;
     padding-left: 8px;
     font-size: 16px;

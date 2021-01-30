@@ -74,14 +74,14 @@ function Registration(props) {
   };
 
   return (
-    <div className="registration-form-container">
+    <div className="registration-form__container">
       <form action="" className="registration-form">
 
-        <div className="registration-form-header margin-left">
-          <p className="registration-form-title">Регистрация</p>
+        <div className="registration-form__header margin-left">
+          <p className="registration-form__title">Регистрация</p>
         </div>
 
-        <div className="registration-form-text margin-left">
+        <div className="registration-form__text margin-left">
           {/* TODO: Replace the dummy link! */}
           <span>Уже есть аккаунт?</span> <a href="login" className="link">Войти</a>
         </div>
@@ -99,13 +99,13 @@ function Registration(props) {
           data={selectData}
         />        
 
-        <div className="registration-form-terms margin-left">
+        <div className="registration-form__terms margin-left">
           <Checkbox 
             termsAccepted={termsAccepted}
             setTermsAccepted={setTermsAccepted}          
           />
 
-          <div className="registration-form-terms-checkbox-text">
+          <div className="registration-form__terms__checkbox-text">
             {/* TODO: Replace the dummy link! */}
             Принимаю <a href="terms" className="link">условия</a> использования
           </div>
