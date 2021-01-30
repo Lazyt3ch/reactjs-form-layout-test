@@ -70,8 +70,8 @@ function Registration(props) {
     [textInputStates, termsAccepted]
   );
 
-  const submit = () => {
-
+  const handleSubmit = () => {
+    // TODO: Add code to submit the form content
   };
 
   return (
@@ -114,7 +114,7 @@ function Registration(props) {
 
         <Submit 
           isSubmitReady={isSubmitReady}
-          submit={submit}
+          handleSubmit={handleSubmit}
         />        
 
       </form>
