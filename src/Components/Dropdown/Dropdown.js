@@ -3,8 +3,7 @@ import "./Dropdown.css";
 
 function Dropdown(props) {
   const {
-    // eslint-disable-next-line
-    selectId, 
+    // selectId, 
     labelText, 
     initialValue, 
     languages, 
@@ -32,7 +31,7 @@ function Dropdown(props) {
   };
 
   const openDropdown = (e) => {
-    setIsDropdownOpen( prevState => !prevState );    
+    setIsDropdownOpen(prevState => !prevState);    
   };
 
   return (
