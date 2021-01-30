@@ -18,6 +18,14 @@ function Dropdown(props) {
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
+  const getDropdownBoxColor = () => {
+    if (!isDropdownOpen && language === "") {
+      return "#7C9CBF";
+    }
+
+    return "#2C2738";
+  }
+
   // eslint-disable-next-line
   const handleChange = (e) => {
     setLanguage(e.target.value);
@@ -37,6 +45,7 @@ function Dropdown(props) {
       </div>      
 
       <div className="registration-form-dropdown-box"
+        style={{ color: getDropdownBoxColor() }}
         onClick={openDropdown}
       >
         <div>
