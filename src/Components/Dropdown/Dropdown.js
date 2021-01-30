@@ -8,7 +8,6 @@ function Dropdown(props) {
     labelText, 
     initialValue, 
     languages, 
-    // eslint-disable-next-line
     language, 
     setLanguage, 
   } = props.data;
@@ -26,18 +25,12 @@ function Dropdown(props) {
     return "#2C2738";
   }
 
-  // // eslint-disable-next-line
-  // const handleChange = (e) => {
-  //   setLanguage(e.target.value);
-  // };
-
   const handleOptionClick = (e) => {
     console.log("option click");
     setLanguage(e.target.value);
   };
 
   const openDropdown = (e) => {
-    // console.log("dropdown opening or closing");
     setIsDropdownOpen( prevState => !prevState );    
   };
 
