@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./Dropdown.css";
 
 function Dropdown(props) {
@@ -16,13 +16,16 @@ function Dropdown(props) {
   // eslint-disable-next-line
   let extendedOptions = [initialValue, ...languages];
 
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
   // eslint-disable-next-line
   const handleChange = (e) => {
     setLanguage(e.target.value);
   };
 
   const openDropdown = (e) => {
-    console.log("dropdown opening");
+    console.log("dropdown opening or closing");
+    setIsDropdownOpen( prevState => !prevState );    
   };
 
   // Custom dropdown example: https://www.w3schools.com/howto/howto_js_dropdown.asp
