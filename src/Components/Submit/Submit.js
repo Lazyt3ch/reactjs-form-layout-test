@@ -11,6 +11,7 @@ function Submit(props) {
   
   return (
     <button type="button" className={getSubmitClasses()}
+      disabled={!isSubmitReady}
       onClick={handleSubmit}
     >
         Зарегистрироваться
