@@ -32,6 +32,7 @@ function Dropdown(props) {
   // };
 
   const handleOptionClick = (e) => {
+    console.log("option click");
     setLanguage(e.target.value);
   };
 
