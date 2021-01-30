@@ -23,21 +23,12 @@
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
-
     border: 1px solid #DBE2EA;
 }
 
 .registration-form__input__field:focus {
     border: 2px solid #0880AE; 
 }
-
-/* .registration-form__input__field_no-focus {
-    border: 1px solid #DBE2EA;
-}
-
-.registration-form__input__field_focus {
-    border: 2px solid #0880AE; 
-} */
 
 .registration-form__input__field::placeholder {
     color: #7C9CBF;

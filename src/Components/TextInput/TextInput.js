@@ -1,4 +1,3 @@
-// import React, {useState} from 'react';
 import React from 'react';
 import "./TextInput.css";
 import validate from "../../utils/validators.js";
@@ -13,14 +12,6 @@ function TextInput(props) {
   } = props.data;
 
   const { textInputStates, setTextInputStates } = props;
-
-  // const [isFocus, setIsFocus] = useState(false);
-
-  // const getInputFieldStyles = () => 
-  //   `registration-form__input__field ${isFocus
-  //     ? "registration-form__input__field_focus"
-  //     : "registration-form__input__field_no-focus"
-  //   }`;
 
   function onChangeHandler(event) {
     const trimmedValue = event.target.value.trim();
@@ -51,11 +42,8 @@ function TextInput(props) {
       </label>
 
       <input type="text" 
-        // className={getInputFieldStyles()}
         className="registration-form__input__field"
         onChange={onChangeHandler}
-        // onFocus={() => setIsFocus(true) }
-        // onBlur={() => setIsFocus(false) }
         placeholder={placeholderText}
         id={inputId}
         tabIndex={tabIndex}
