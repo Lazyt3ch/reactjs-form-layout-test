@@ -1,4 +1,4 @@
-.registration-form-dropdown {
+.registration-form__dropdown {
     position: relative;
     width: calc(100% - 60px);    
     margin-top: 10px;
@@ -6,7 +6,7 @@
     font-family: "IBM Plex Sans", sans-serif;
 }
 
-.registration-form-dropdown-label {
+.registration-form__dropdown__label {
     font-size: 16px;
     font-weight: 500;
     color: #756F86;
@@ -14,7 +14,7 @@
     margin-top: 0;    
 }
 
-.registration-form-dropdown-box {
+.registration-form__dropdown__box {
     padding-left: 16px;
     height: 52px;
     width: calc(100% - 16px);
@@ -26,18 +26,18 @@
     align-items: center;    
 }
 
-.registration-form-dropdown-box-content {
+.registration-form__dropdown__box__content {
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
 }
 
-.registration-form-dropdown-button {
+.registration-form__dropdown__button {
     margin-right: 10px;
     margin-left: auto;
 }
 
-.registration-form-dropdown-list {
+.registration-form__dropdown__list {
     position: absolute;
     width: 100%;
     background: #FFFFFF;
@@ -47,7 +47,7 @@
     margin-top: 4px;
 }
 
-.registration-form-dropdown-option {
+.registration-form__dropdown__list__option {
     padding-left: 16px;
     height: 44px; 
     width: calc(100% - 16px);
@@ -59,6 +59,6 @@
 }
 
 /* Also add backup styles for non-hoverable mobile devices? */
-.registration-form-dropdown-option:hover {
+.registration-form__dropdown__list__option:hover {
     background-color: #EBF4F8;
 }

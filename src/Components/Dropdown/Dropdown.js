@@ -34,32 +34,32 @@ function Dropdown(props) {
   };
 
   return (
-    <div className="registration-form-dropdown margin-left">
-      <div className="registration-form-dropdown-label">
+    <div className="registration-form__dropdown margin-left">
+      <div className="registration-form__dropdown__label">
         {labelText}
       </div>      
 
-      <div className="registration-form-dropdown-box"
+      <div className="registration-form__dropdown__box"
         style={{ border: getDropdownBoxBorder() }}
         onClick={openDropdown}
       >
-        <div className="registration-form-dropdown-box-content"
+        <div className="registration-form__dropdown__box__content"
           style={{ color: getDropdownBoxFontColor() }}>
           {language || initialValue}
         </div>
 
-        <div className="registration-form-dropdown-button">
+        <div className="registration-form__dropdown__button">
           <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15 17.5858L21.2929 11.2929C21.6834 10.9024 22.3166 10.9024 22.7071 11.2929C23.0976 11.6834 23.0976 12.3166 22.7071 12.7071L15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C6.90237 12.3166 6.90237 11.6834 7.29289 11.2929C7.68342 10.9024 8.31658 10.9024 8.70711 11.2929L15 17.5858Z" fill="#0880AE"/>
           </svg>
         </div>
       </div>
 
-      <div className="registration-form-dropdown-list"
+      <div className="registration-form__dropdown__list"
         style={{display: (isDropdownOpen ? "block" : "none")}}
       >
         {languages.map( (lang) => (
-          <div className="registration-form-dropdown-option"
+          <div className="registration-form__dropdown__list__option"
             key={lang}
             onClick={handleOptionClick}
           >
