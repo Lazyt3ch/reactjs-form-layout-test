@@ -26,10 +26,10 @@ function Dropdown(props) {
     return "#2C2738";
   }
 
-  // eslint-disable-next-line
-  const handleChange = (e) => {
-    setLanguage(e.target.value);
-  };
+  // // eslint-disable-next-line
+  // const handleChange = (e) => {
+  //   setLanguage(e.target.value);
+  // };
 
   const handleOptionClick = (e) => {
     setLanguage(e.target.value);
