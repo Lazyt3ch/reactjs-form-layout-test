@@ -29,14 +29,41 @@ function Dropdown(props) {
     setIsDropdownOpen(false);
   };
 
-  const handleOptionKeyUp = (e) => {
-    const keyCode = e.code;
-    console.log("keyCode =", keyCode);
-    // ArrowUp 
-    // ArrowDown
+  const handleKeyUp = (e) => {
+    if (e.shiftKey && e.keyCode === 9) {
+      console.log("shift tab");
+      setIsDropdownOpen(false);
+      return;
+    }
+
+    if (e.keyCode === 9) {
+      console.log("tab");
+      setIsDropdownOpen(false);
+      return;
+    }
+
+    // switch (e.code) {
+    //   case "Tab":
+    //     if (isDropdownOpen) {
+    //       setIsDropdownOpen(false);
+    //     }
+    //     break;
+    //   case "Space":
+    //     toggleDropdown();
+    //     break;
+    //   default:
+    //     break;
+    // }
   };
 
-  const openDropdown = (e) => {
+  const handleOptionKeyUp = (e) => {
+    switch (e.code) {
+      default:
+        break;
+    }
+  };
+
+  const toggleDropdown = (e) => {
     setIsDropdownOpen(prevState => !prevState);    
   };
 
@@ -48,8 +75,8 @@ function Dropdown(props) {
 
       <div className="registration-form__dropdown__box"
         style={{ border: getDropdownBoxBorder() }}
-        onClick={openDropdown}      
-        onKeyUp={openDropdown}
+        onClick={toggleDropdown}      
+        onKeyUp={handleKeyUp}
         tabIndex={4}
       >
         <div className="registration-form__dropdown__box__content"
