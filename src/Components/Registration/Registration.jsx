@@ -5,6 +5,8 @@ import Dropdown from "../Dropdown/Dropdown.jsx";
 import Checkbox from "../Checkbox/Checkbox.jsx";
 import Submit from "../Submit/Submit.jsx";
 
+const tabIndex = 0;
+
 const invalidMessage = "Введено некорректное значение";
 
 const languages = [
@@ -83,7 +85,7 @@ function Registration(props) {
 
         <div className="registration-form__text registration-form_margin-left">
           {/* TODO: Replace the dummy link! */}
-          <span>Уже есть аккаунт?</span> <a href="login" className="link">Войти</a>
+          <span>Уже есть аккаунт?</span> <a href="login" className="link" tabIndex={tabIndex}>Войти</a>
         </div>
 
         {textInputData.map((data) => 
@@ -110,7 +112,7 @@ function Registration(props) {
 
           <div className="registration-form__terms__checkbox-text">
             {/* TODO: Replace the dummy link! */}
-            Принимаю <a href="terms" className="link">условия</a> использования
+            Принимаю <a href="terms" className="link" tabIndex={tabIndex}>условия</a> использования
           </div>
         </div>
 
