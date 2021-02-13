@@ -8,11 +8,19 @@ function Checkbox(props) {
     `registration-form__checkbox ${termsAccepted 
       ? "registration-form__checkbox_checked"
       : "registration-form__checkbox_unchecked"}`;
+
+  const handleKeyUp = (e) => {
+    if (e.code === "Space") {
+      setTermsAccepted(prevState => !prevState);
+    }
+  }
   
   return (
     <div className="registration-form__checkbox__wrapper">
       <div className={getCheckboxClasses()}
         onClick={() => setTermsAccepted(prevState => !prevState)}
+        onKeyUp={handleKeyUp}
+        tabIndex={5}
       >
         <svg style={{display: (termsAccepted ? "block" : "none")}}
           width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
