@@ -40,10 +40,6 @@ function Dropdown(props) {
       : "1px solid #DBE2EA";
   }  
 
-  // const handleDropdownClose = () => {
-
-  // }
-
   const handleOptionClick = (e) => {
     const selectedLanguage = e.target.innerHTML;
     setLanguage(selectedLanguage);
