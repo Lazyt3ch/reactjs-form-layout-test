@@ -60,3 +60,7 @@
     color: #0880AE;
     text-decoration: none;
 }
+
+.link:hover {
+    color: blue;
+}
