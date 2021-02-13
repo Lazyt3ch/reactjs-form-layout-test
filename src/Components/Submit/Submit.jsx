@@ -11,7 +11,6 @@ function Submit(props) {
   const handleKeyDown = (e) => { 
     e.preventDefault();   
     if (!isPressed && (e.keyCode === 32 || e.keyCode === 13)) { // Space or Enter      
-      // console.log("Space or Enter");
       setIsPressed(true);
       handleSubmit();      
     }
@@ -38,25 +37,27 @@ function Submit(props) {
       setIsPressed(false);
     }
   };
+
+  const handleClick = (e) => {
+    e.preventDefault();
+  };
   
   return (
     <div className="registration-form__submit__wrapper">
       <div className="registration-form__submit__base registration-form_margin-left">
-        <button type="button" 
-          // className="registration-form__submit registration-form_margin-left"
+        <div  
           className={`registration-form__submit  
           ${isPressed ? "registration-form__submit_pressed" : ""}`}
-          // style={isPressed ? { left: "1px", top: "1px" } : null}
           disabled={!isSubmitReady}
-          // onClick={handleSubmit}
+          onClick={handleClick}
           onMouseDown={handleMouseDown}
           onMouseUp={handleMouseUp}
           onKeyUp={handleKeyUp}
-          onKeyDown={handleKeyDown}
+          onKeyDown={handleKeyDown}          
           tabIndex={tabIndex}
         >
           Зарегистрироваться
-        </button>
+        </div>
       </div>
     </div>
   );

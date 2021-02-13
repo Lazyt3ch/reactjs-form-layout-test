@@ -14,11 +14,10 @@
     left: 0;
     top: 0;
 
-    background-color: rgba(44, 39, 56, 0.08);
+    background-color: black;
     z-index: 1;
 
     border-radius: 6px;
-
 }
 
 .registration-form__submit {    
@@ -43,7 +42,7 @@
     background: #0880AE;
     color: #EBF4F8;    
 
-    z-index: 2;
+    z-index: 2;    
 }
 
 .registration-form__submit:focus, 
@@ -62,8 +61,9 @@
 }
 
 .registration-form__submit_pressed {
-    left: 1px;
-    top: 1px;
+    left: 2px;
+    top: 2px;
 
-    /* box-shadow: -2px 10px 24px rgba(44, 39, 56, 0.08), -2px 22px 48px rgba(44, 39, 56, 0.16) !important;  */
+    height: 54px;
+    width: 398px;
 }
