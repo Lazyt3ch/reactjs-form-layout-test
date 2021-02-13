@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import "./Dropdown.css";
 
 function Dropdown(props) {
@@ -15,16 +15,17 @@ function Dropdown(props) {
   const numLangs = languages.length; 
   const [langIndex, setLangIndex] = useState(-1);
   const [isHovered, setIsHovered] = useState(false);
+  const dropdownBox = useRef(null);
 
   const handleOnHover = () => {
-    console.log("hover");
-    console.log("langIndex =", langIndex);
+    // console.log("hover");
+    // console.log("langIndex =", langIndex);
     setIsHovered(true);
   }
 
   const handleOnHoverOff = () => {
-    console.log("hover off");
-    console.log("langIndex =", langIndex);
+    // console.log("hover off");
+    // console.log("langIndex =", langIndex);
     setIsHovered(false);
   }
 
@@ -45,18 +46,30 @@ function Dropdown(props) {
     setLanguage(selectedLanguage);
     setLangIndex(languages.indexOf(selectedLanguage));
     setIsDropdownOpen(false);
+    setIsDropdownFocused(true);
+    dropdownBox.current.focus();
+  };
+
+  const handleKeyUp = (e) => { 
+    
   };
 
   const handleKeyDown = (e) => { 
     // console.log("e.keyCode =", e.keyCode);
 
     if (e.shiftKey && e.keyCode === 9) { // Shift + Tab
-      setIsDropdownOpen(false);
+      if (isDropdownOpen) {
+        setIsDropdownOpen(false);
+      }
+      // setIsDropdownFocused(false);
       return;
     }
 
     if (e.keyCode === 9) { // Tab
-      setIsDropdownOpen(false);
+      if (isDropdownOpen) {
+        setIsDropdownOpen(false);
+      }
+      // setIsDropdownFocused(false);
       return;
     }
 
@@ -114,10 +127,12 @@ function Dropdown(props) {
       <div className="registration-form__dropdown__box"
         style={{ border: getDropdownBoxBorder() }}
         onClick={toggleDropdown}      
-        onKeyUp={handleKeyDown}
+        onKeyDown={handleKeyDown}
+        onKeyUp={handleKeyUp}
         onFocus={() => setIsDropdownFocused(true)}
         onBlur={() => setIsDropdownFocused(false)}
         tabIndex={4}
+        ref={dropdownBox}
       >
         <div className="registration-form__dropdown__box__content"
           style={{ color: getDropdownBoxFontColor() }}          
