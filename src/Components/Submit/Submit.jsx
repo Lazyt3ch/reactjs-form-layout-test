@@ -12,15 +12,17 @@ function Submit(props) {
   }
   
   return (
-    <button type="button" 
-      className="registration-form__submit registration-form_margin-left"
-      disabled={!isSubmitReady}
-      onClick={handleSubmit}
-      onKeyUp={handleKeyUp}
-      tabIndex={tabIndex}
-    >
-      Зарегистрироваться
-    </button>
+    <div className="registration-form__submit__wrapper">
+      <button type="button" 
+        className="registration-form__submit registration-form_margin-left"
+        disabled={!isSubmitReady}
+        onClick={handleSubmit}
+        onKeyUp={handleKeyUp}
+        tabIndex={tabIndex}
+      >
+        Зарегистрироваться
+      </button>
+    </div>
   );
 }
 
