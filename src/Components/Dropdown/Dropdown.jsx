@@ -18,14 +18,10 @@ function Dropdown(props) {
   const dropdownBox = useRef(null);
 
   const handleOnHover = () => {
-    // console.log("hover");
-    // console.log("langIndex =", langIndex);
     setIsHovered(true);
   }
 
   const handleOnHoverOff = () => {
-    // console.log("hover off");
-    // console.log("langIndex =", langIndex);
     setIsHovered(false);
   }
 
@@ -50,16 +46,11 @@ function Dropdown(props) {
     dropdownBox.current.focus();
   };
 
-  const handleKeyUp = (e) => { 
-    
-  };
-
   const handleKeyDown = (e) => { 
     // console.log("e.keyCode =", e.keyCode);
 
     if (e.shiftKey && e.keyCode === 9) { // Shift + Tab
       if (isDropdownOpen) {
-        // dropdownBox.current.focus();
         e.preventDefault(); // Prevent switching to the control above
         setIsDropdownOpen(false);
       }
@@ -69,7 +60,6 @@ function Dropdown(props) {
     if (e.keyCode === 9) { // Tab
       if (isDropdownOpen) {
         e.preventDefault(); // Prevent switching to the control below
-        // dropdownBox.current.focus();
         setIsDropdownOpen(false);
       }
       return;
@@ -109,12 +99,6 @@ function Dropdown(props) {
 
   };
 
-  // const handleOptionKeyUp = (e) => {
-  //   switch (e.code) {
-  //     default:
-  //       break;
-  //   }
-  // };
 
   const toggleDropdown = (e) => {
     setIsDropdownOpen(prevState => !prevState);    
@@ -130,7 +114,6 @@ function Dropdown(props) {
         style={{ border: getDropdownBoxBorder() }}
         onClick={toggleDropdown}      
         onKeyDown={handleKeyDown}
-        onKeyUp={handleKeyUp}
         onFocus={() => setIsDropdownFocused(true)}
         onBlur={() => setIsDropdownFocused(false)}
         tabIndex={4}
@@ -151,7 +134,6 @@ function Dropdown(props) {
 
       <div className="registration-form__dropdown__list"
         style={{display: (isDropdownOpen ? "block" : "none")}}
-        // onKeyUp={handleOptionKeyUp}
         onMouseLeave={handleOnHoverOff}
       >
         {languages.map( (lang, idx) => (
