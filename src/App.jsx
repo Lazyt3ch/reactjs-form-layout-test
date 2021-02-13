@@ -1,5 +1,5 @@
 import './App.css';
-import Registration from './Components/Registration/Registration.js';
+import Registration from './Components/Registration/Registration.jsx';
 
 function App() {
   return (

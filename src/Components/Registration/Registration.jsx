@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import "./Registration.css";
-import TextInput from "../TextInput/TextInput.js";
-import Dropdown from "../Dropdown/Dropdown.js";
-import Checkbox from "../Checkbox/Checkbox.js";
-import Submit from "../Submit/Submit.js";
+import TextInput from "../TextInput/TextInput.jsx";
+import Dropdown from "../Dropdown/Dropdown.jsx";
+import Checkbox from "../Checkbox/Checkbox.jsx";
+import Submit from "../Submit/Submit.jsx";
 
 const invalidMessage = "Введено некорректное значение";
 
