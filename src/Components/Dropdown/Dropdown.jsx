@@ -11,6 +11,7 @@ function Dropdown(props) {
   } = props.data;
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isDropdownFocused, setIsDropdownFocused] = useState(false);
 
   const getDropdownBoxFontColor = () => {
     return (!isDropdownOpen && language === "") 
@@ -19,7 +20,7 @@ function Dropdown(props) {
   }
 
   const getDropdownBoxBorder = () => {
-    return isDropdownOpen
+    return (isDropdownOpen || isDropdownFocused)
       ? "2px solid #0880AE"
       : "1px solid #DBE2EA";
   }  
@@ -42,18 +43,11 @@ function Dropdown(props) {
       return;
     }
 
-    // switch (e.code) {
-    //   case "Tab":
-    //     if (isDropdownOpen) {
-    //       setIsDropdownOpen(false);
-    //     }
-    //     break;
-    //   case "Space":
-    //     toggleDropdown();
-    //     break;
-    //   default:
-    //     break;
-    // }
+    if (e.keyCode === "32") {
+      console.log("space");
+      setIsDropdownOpen(prevState => !prevState);
+    }
+
   };
 
   const handleOptionKeyUp = (e) => {
@@ -77,6 +71,8 @@ function Dropdown(props) {
         style={{ border: getDropdownBoxBorder() }}
         onClick={toggleDropdown}      
         onKeyUp={handleKeyUp}
+        onFocus={() => setIsDropdownFocused(true)}
+        onBlur={() => setIsDropdownFocused(false)}
         tabIndex={4}
       >
         <div className="registration-form__dropdown__box__content"

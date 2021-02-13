@@ -26,6 +26,10 @@
     align-items: center;    
 }
 
+registration-form__dropdown__box:focus {
+    border:2px solid #0880AE;
+}
+
 .registration-form__dropdown__box__content {
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 16px;
@@ -65,3 +69,4 @@
     border-radius: 6px;
     background-color: #EBF4F8;
 }
+
