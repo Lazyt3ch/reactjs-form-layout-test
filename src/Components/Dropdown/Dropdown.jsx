@@ -41,11 +41,14 @@ function Dropdown(props) {
 
       <div className="registration-form__dropdown__box"
         style={{ border: getDropdownBoxBorder() }}
-        onClick={openDropdown}
+        onClick={openDropdown}      
+        onKeyUp={openDropdown}
+        tabIndex={4}
       >
         <div className="registration-form__dropdown__box__content"
-          style={{ color: getDropdownBoxFontColor() }}>
-          {language || initialValue}
+          style={{ color: getDropdownBoxFontColor() }}          
+        >
+          {language || initialValue}          
         </div>
 
         <div className="registration-form__dropdown__button">
