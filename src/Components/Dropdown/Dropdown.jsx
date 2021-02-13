@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import "./Dropdown.css";
 
 function Dropdown(props) {
@@ -16,6 +16,7 @@ function Dropdown(props) {
   const [langIndex, setLangIndex] = useState(-1);
   const [isHovered, setIsHovered] = useState(false);
   const dropdownBox = useRef(null);
+  const dropdownList = useRef(null);
 
   const handleOnHover = () => {
     setIsHovered(true);
@@ -99,10 +100,24 @@ function Dropdown(props) {
 
   };
 
-
   const toggleDropdown = (e) => {
     setIsDropdownOpen(prevState => !prevState);    
   };
+
+  useEffect(
+    () => {
+      if (isDropdownOpen) {
+        const handleClickOutside = (e) => {
+
+        };
+        document.addEventListener("click", handleClickOutside);
+        return () => document.removeEventListener("click", handleClickOutside);
+      }
+    },
+    [isDropdownOpen]
+  );
+
+
 
   return (
     <div className="registration-form__dropdown registration-form_margin-left">
@@ -135,6 +150,7 @@ function Dropdown(props) {
       <div className="registration-form__dropdown__list"
         style={{display: (isDropdownOpen ? "block" : "none")}}
         onMouseLeave={handleOnHoverOff}
+        ref={dropdownList}
       >
         {languages.map( (lang, idx) => (
           <div className={`registration-form__dropdown__list__option
