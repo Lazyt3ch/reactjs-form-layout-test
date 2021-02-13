@@ -13,6 +13,7 @@ function Submit(props) {
     <button type="button" className={getSubmitClasses()}
       disabled={!isSubmitReady}
       onClick={handleSubmit}
+      tabIndex={6}
     >
       Зарегистрироваться
     </button>
