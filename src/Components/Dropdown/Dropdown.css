@@ -45,6 +45,7 @@
     border-radius: 6px;    
     box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04), 0px 20px 20px rgba(44, 39, 56, 0.04);    
     margin-top: 4px;
+    z-index: 10;
 }
 
 .registration-form__dropdown__list__option {
