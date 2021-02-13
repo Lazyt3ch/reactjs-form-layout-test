@@ -2,14 +2,14 @@ import React from 'react';
 import "./Submit.css";
 
 function Submit(props) {
-  const {isSubmitReady, handleSubmit} = props;     
+  const {isSubmitReady, handleSubmit, tabIndex} = props;     
   
   return (
     <button type="button" 
       className="registration-form__submit registration-form_margin-left"
       disabled={!isSubmitReady}
       onClick={handleSubmit}
-      tabIndex={6}
+      tabIndex={tabIndex}
     >
       Зарегистрироваться
     </button>

@@ -10,6 +10,8 @@ function Dropdown(props) {
     setLanguage, 
   } = props.data;
 
+  const {tabIndex} = props;
+
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isDropdownFocused, setIsDropdownFocused] = useState(false);
   const numLangs = languages.length; 
@@ -132,7 +134,7 @@ function Dropdown(props) {
         onKeyDown={handleKeyDown}
         onFocus={() => setIsDropdownFocused(true)}
         onBlur={() => setIsDropdownFocused(false)}
-        tabIndex={4}
+        tabIndex={tabIndex}
         ref={dropdownBox}
       >
         <div className="registration-form__dropdown__box__content"

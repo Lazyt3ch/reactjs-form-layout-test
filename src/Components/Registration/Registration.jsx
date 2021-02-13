@@ -21,21 +21,21 @@ function Registration(props) {
       labelText: "Имя",
       placeholderText: "Введите ваше имя",
       invalidMessage,
-      tabIndex: 1,
+      tabIndex: 0,
     },
     {
       inputId: "email",
       labelText: "Email",
       placeholderText: "Введите ваш email",
       invalidMessage,
-      tabIndex: 2,
+      tabIndex: 0,
     },
     {
       inputId: "phone",
       labelText: "Номер телефона",
       placeholderText: "Введите номер телефона",
       invalidMessage,
-      tabIndex: 3,
+      tabIndex: 0,
     },  
   ];
 
@@ -92,17 +92,20 @@ function Registration(props) {
             data={data}
             textInputStates={textInputStates}
             setTextInputStates={setTextInputStates}
+            tabIndex={0}
           />
         )}
 
         <Dropdown 
           data={selectData}
+          tabIndex={0}
         />        
 
         <div className="registration-form__terms registration-form_margin-left">
           <Checkbox 
             termsAccepted={termsAccepted}
             setTermsAccepted={setTermsAccepted}          
+            tabIndex={0}
           />
 
           <div className="registration-form__terms__checkbox-text">
@@ -114,6 +117,7 @@ function Registration(props) {
         <Submit 
           isSubmitReady={isSubmitReady}
           handleSubmit={handleSubmit}
+          tabIndex={0}
         />        
 
       </form>

@@ -2,7 +2,7 @@ import React from 'react';
 import "./Checkbox.css";
 
 function Checkbox(props) {
-  const {termsAccepted, setTermsAccepted} = props;     
+  const {termsAccepted, setTermsAccepted, tabIndex} = props;     
   
   const getCheckboxClasses = () => 
     `registration-form__checkbox ${termsAccepted 
@@ -20,7 +20,7 @@ function Checkbox(props) {
       <div className={getCheckboxClasses()}
         onClick={() => setTermsAccepted(prevState => !prevState)}
         onKeyUp={handleKeyUp}
-        tabIndex={5}
+        tabIndex={tabIndex}
       >
         <svg style={{display: (termsAccepted ? "block" : "none")}}
           width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
