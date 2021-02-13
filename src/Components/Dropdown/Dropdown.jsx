@@ -59,17 +59,17 @@ function Dropdown(props) {
 
     if (e.shiftKey && e.keyCode === 9) { // Shift + Tab
       if (isDropdownOpen) {
+        // dropdownBox.current.focus();
         setIsDropdownOpen(false);
       }
-      // setIsDropdownFocused(false);
       return;
     }
 
     if (e.keyCode === 9) { // Tab
       if (isDropdownOpen) {
+        // dropdownBox.current.focus();
         setIsDropdownOpen(false);
       }
-      // setIsDropdownFocused(false);
       return;
     }
 
