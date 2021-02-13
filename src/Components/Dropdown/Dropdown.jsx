@@ -12,6 +12,8 @@ function Dropdown(props) {
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isDropdownFocused, setIsDropdownFocused] = useState(false);
+  const numLangs = languages.length; 
+  const [langIndex, setLangIndex] = useState(null);
 
   const getDropdownBoxFontColor = () => {
     return (!isDropdownOpen && language === "") 
@@ -30,23 +32,44 @@ function Dropdown(props) {
     setIsDropdownOpen(false);
   };
 
-  const handleKeyUp = (e) => {
+  const handleKeyDown = (e) => {
+    console.log("e.keyCode =", e.keyCode);
+
     if (e.shiftKey && e.keyCode === 9) {
-      // console.log("shift tab");
+      console.log("shift tab");
       setIsDropdownOpen(false);
       return;
     }
 
     if (e.keyCode === 9) {
-      // console.log("tab");
+      console.log("tab");
       setIsDropdownOpen(false);
       return;
     }
 
-    if (e.keyCode === "32") {
-      // console.log("space");
+    if (e.keyCode === 32) {
+      console.log("space");
       setIsDropdownOpen(prevState => !prevState);
+      return;
     }
+
+    if (e.keyCode === 40) { // Arrow Down
+      if (langIndex === null) {
+        setLangIndex(0)
+      } else if (langIndex < numLangs - 1) {
+        setLangIndex(prevLangIndex => prevLangIndex + 1);
+      }
+
+      return;
+    }
+
+    if (e.keyCode === 38) { // Arrow Up
+      if (langIndex > 0) {
+        setLangIndex(prevLangIndex => prevLangIndex - 1)
+      }
+
+      return;
+    }    
 
   };
 
@@ -70,7 +93,7 @@ function Dropdown(props) {
       <div className="registration-form__dropdown__box"
         style={{ border: getDropdownBoxBorder() }}
         onClick={toggleDropdown}      
-        onKeyUp={handleKeyUp}
+        onKeyUp={handleKeyDown}
         onFocus={() => setIsDropdownFocused(true)}
         onBlur={() => setIsDropdownFocused(false)}
         tabIndex={4}
