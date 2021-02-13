@@ -29,6 +29,13 @@ function Dropdown(props) {
     setIsDropdownOpen(false);
   };
 
+  const handleOptionKeyUp = (e) => {
+    const keyCode = e.code;
+    console.log("keyCode =", keyCode);
+    // ArrowUp 
+    // ArrowDown
+  };
+
   const openDropdown = (e) => {
     setIsDropdownOpen(prevState => !prevState);    
   };
@@ -60,6 +67,7 @@ function Dropdown(props) {
 
       <div className="registration-form__dropdown__list"
         style={{display: (isDropdownOpen ? "block" : "none")}}
+        onKeyUp={handleOptionKeyUp}
       >
         {languages.map( (lang) => (
           <div className="registration-form__dropdown__list__option"
