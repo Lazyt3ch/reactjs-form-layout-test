@@ -32,19 +32,19 @@ function Dropdown(props) {
 
   const handleKeyUp = (e) => {
     if (e.shiftKey && e.keyCode === 9) {
-      console.log("shift tab");
+      // console.log("shift tab");
       setIsDropdownOpen(false);
       return;
     }
 
     if (e.keyCode === 9) {
-      console.log("tab");
+      // console.log("tab");
       setIsDropdownOpen(false);
       return;
     }
 
     if (e.keyCode === "32") {
-      console.log("space");
+      // console.log("space");
       setIsDropdownOpen(prevState => !prevState);
     }
 
