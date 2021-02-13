@@ -26,7 +26,7 @@ function Submit(props) {
     <div className="registration-form__submit__wrapper">
       <button type="button" 
         className="registration-form__submit registration-form_margin-left"
-        style={isPressed ? { left: "2px", top: "2px" } : null}
+        style={isPressed ? { left: "1px", top: "1px" } : null}
         disabled={!isSubmitReady}
         onClick={handleSubmit}
         onKeyUp={handleKeyUp}
