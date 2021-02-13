@@ -19,11 +19,9 @@
 .registration-form__checkbox_unchecked {
     height: 28px;
     width: 28px;
-    /* border: 1px solid #DBE2EA; */
 }
 
 .registration-form__checkbox_checked {
     height: 26px;
     width: 26px;
-    /* border: 2px solid #0880AE; */
 }
