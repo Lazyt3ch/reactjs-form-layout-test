@@ -60,5 +60,8 @@
 
 /* Also add backup styles for non-hoverable mobile devices? */
 .registration-form__dropdown__list__option:hover {
+    width: 100%;
+    border: none;
+    border-radius: 6px;
     background-color: #EBF4F8;
 }
