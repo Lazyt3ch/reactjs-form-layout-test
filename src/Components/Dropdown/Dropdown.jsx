@@ -108,7 +108,10 @@ function Dropdown(props) {
     () => {
       if (isDropdownOpen) {
         const handleClickOutside = (e) => {
-
+          if ( !dropdownList.current.contains(e.target) ) {
+            setIsDropdownOpen(false);
+            document.removeEventListener("click", handleClickOutside);
+          }
         };
         document.addEventListener("click", handleClickOutside);
         return () => document.removeEventListener("click", handleClickOutside);
@@ -116,8 +119,6 @@ function Dropdown(props) {
     },
     [isDropdownOpen]
   );
-
-
 
   return (
     <div className="registration-form__dropdown registration-form_margin-left">
