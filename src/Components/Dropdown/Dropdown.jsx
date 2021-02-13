@@ -32,24 +32,23 @@ function Dropdown(props) {
     setIsDropdownOpen(false);
   };
 
-  const handleKeyDown = (e) => {
-    console.log("e.keyCode =", e.keyCode);
+  const handleKeyDown = (e) => { 
+    // console.log("e.keyCode =", e.keyCode);
 
-    if (e.shiftKey && e.keyCode === 9) {
-      console.log("shift tab");
+    if (e.shiftKey && e.keyCode === 9) { // Shift + Tab
       setIsDropdownOpen(false);
       return;
     }
 
-    if (e.keyCode === 9) {
-      console.log("tab");
+    if (e.keyCode === 9) { // Tab
       setIsDropdownOpen(false);
       return;
     }
 
-    if (e.keyCode === 32) {
-      console.log("space");
-      setIsDropdownOpen(prevState => !prevState);
+    if (e.keyCode === 32) { // Space
+      if (!isDropdownOpen) {
+        setIsDropdownOpen(true);
+      }
       return;
     }
 
@@ -68,6 +67,17 @@ function Dropdown(props) {
         setLangIndex(prevLangIndex => prevLangIndex - 1)
       }
 
+      return;
+    }    
+
+    if (e.keyCode === 27) { // Esc
+      setIsDropdownOpen(false);
+      return;
+    }
+
+    if (e.keyCode === 13) { // Enter
+      setIsDropdownOpen(false);
+      setLanguage(languages[langIndex]);
       return;
     }    
 
