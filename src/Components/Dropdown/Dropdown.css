@@ -26,9 +26,9 @@
     align-items: center;    
 }
 
-registration-form__dropdown__box:focus {
+/* registration-form__dropdown__box:focus {
     border:2px solid #0880AE;
-}
+} */
 
 .registration-form__dropdown__box__content {
     font-family: "IBM Plex Sans", sans-serif;
@@ -63,7 +63,8 @@ registration-form__dropdown__box:focus {
 }
 
 /* Also add backup styles for non-hoverable mobile devices? */
-.registration-form__dropdown__list__option:hover {
+.registration-form__dropdown__list__option:hover, 
+.registration-form__dropdown__list__option_selected {
     width: 100%;
     border: none;
     border-radius: 6px;

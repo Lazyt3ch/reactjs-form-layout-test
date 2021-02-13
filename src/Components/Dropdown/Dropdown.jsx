@@ -115,8 +115,9 @@ function Dropdown(props) {
         style={{display: (isDropdownOpen ? "block" : "none")}}
         onKeyUp={handleOptionKeyUp}
       >
-        {languages.map( (lang) => (
-          <div className="registration-form__dropdown__list__option"
+        {languages.map( (lang, idx) => (
+          <div className={`registration-form__dropdown__list__option
+            ${idx === langIndex ? "registration-form__dropdown__list__option_selected" : ""}`}
             key={lang}
             onClick={handleOptionClick}
           >
