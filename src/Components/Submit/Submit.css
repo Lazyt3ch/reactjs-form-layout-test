@@ -45,11 +45,7 @@
     cursor: not-allowed;
 }
 
-.registration-form__submit_pressed {
-    background: #DBE2EA;
-    color: #B1B5BF;        
-
-    box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.08);   
-    
-    cursor: not-allowed;
-}
+/* .registration-form__submit_pressed {
+    left: 2px;
+    top: 2px;
+} */
