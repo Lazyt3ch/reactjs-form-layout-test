@@ -63,6 +63,7 @@
 }
 
 /* Also add backup styles for non-hoverable mobile devices? */
+/* .registration-form__dropdown__list__option:hover { */
 .registration-form__dropdown__list__option:hover, 
 .registration-form__dropdown__list__option_selected {
     width: 100%;

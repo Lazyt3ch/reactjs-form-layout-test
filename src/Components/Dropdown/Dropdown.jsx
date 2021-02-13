@@ -13,7 +13,20 @@ function Dropdown(props) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isDropdownFocused, setIsDropdownFocused] = useState(false);
   const numLangs = languages.length; 
-  const [langIndex, setLangIndex] = useState(null);
+  const [langIndex, setLangIndex] = useState(-1);
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleOnHover = () => {
+    console.log("hover");
+    console.log("langIndex =", langIndex);
+    setIsHovered(true);
+  }
+
+  const handleOnHoverOff = () => {
+    console.log("hover off");
+    console.log("langIndex =", langIndex);
+    setIsHovered(false);
+  }
 
   const getDropdownBoxFontColor = () => {
     return (!isDropdownOpen && language === "") 
@@ -27,8 +40,14 @@ function Dropdown(props) {
       : "1px solid #DBE2EA";
   }  
 
+  // const handleDropdownClose = () => {
+
+  // }
+
   const handleOptionClick = (e) => {
-    setLanguage(e.target.innerHTML);
+    const selectedLanguage = e.target.innerHTML;
+    setLanguage(selectedLanguage);
+    setLangIndex(languages.indexOf(selectedLanguage));
     setIsDropdownOpen(false);
   };
 
@@ -53,12 +72,9 @@ function Dropdown(props) {
     }
 
     if (e.keyCode === 40) { // Arrow Down
-      if (langIndex === null) {
-        setLangIndex(0)
-      } else if (langIndex < numLangs - 1) {
+      if (langIndex < numLangs - 1) {
         setLangIndex(prevLangIndex => prevLangIndex + 1);
       }
-
       return;
     }
 
@@ -66,7 +82,6 @@ function Dropdown(props) {
       if (langIndex > 0) {
         setLangIndex(prevLangIndex => prevLangIndex - 1)
       }
-
       return;
     }    
 
@@ -124,12 +139,14 @@ function Dropdown(props) {
       <div className="registration-form__dropdown__list"
         style={{display: (isDropdownOpen ? "block" : "none")}}
         onKeyUp={handleOptionKeyUp}
+        onMouseLeave={handleOnHoverOff}
       >
         {languages.map( (lang, idx) => (
           <div className={`registration-form__dropdown__list__option
-            ${idx === langIndex ? "registration-form__dropdown__list__option_selected" : ""}`}
+            ${idx === langIndex && !isHovered ? "registration-form__dropdown__list__option_selected" : ""}`}
             key={lang}
             onClick={handleOptionClick}
+            onMouseEnter={handleOnHover}
           >
             {lang}
           </div>
