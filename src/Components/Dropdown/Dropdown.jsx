@@ -60,6 +60,7 @@ function Dropdown(props) {
     if (e.shiftKey && e.keyCode === 9) { // Shift + Tab
       if (isDropdownOpen) {
         // dropdownBox.current.focus();
+        e.preventDefault(); // Prevent switching to the control above
         setIsDropdownOpen(false);
       }
       return;
@@ -67,6 +68,7 @@ function Dropdown(props) {
 
     if (e.keyCode === 9) { // Tab
       if (isDropdownOpen) {
+        e.preventDefault(); // Prevent switching to the control below
         // dropdownBox.current.focus();
         setIsDropdownOpen(false);
       }
@@ -107,12 +109,12 @@ function Dropdown(props) {
 
   };
 
-  const handleOptionKeyUp = (e) => {
-    switch (e.code) {
-      default:
-        break;
-    }
-  };
+  // const handleOptionKeyUp = (e) => {
+  //   switch (e.code) {
+  //     default:
+  //       break;
+  //   }
+  // };
 
   const toggleDropdown = (e) => {
     setIsDropdownOpen(prevState => !prevState);    
@@ -149,7 +151,7 @@ function Dropdown(props) {
 
       <div className="registration-form__dropdown__list"
         style={{display: (isDropdownOpen ? "block" : "none")}}
-        onKeyUp={handleOptionKeyUp}
+        // onKeyUp={handleOptionKeyUp}
         onMouseLeave={handleOnHoverOff}
       >
         {languages.map( (lang, idx) => (
