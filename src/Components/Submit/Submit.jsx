@@ -9,7 +9,6 @@ function Submit(props) {
   // Workaround, mostly for this 20-years-old Firefox bug: 
   // https://bugzilla.mozilla.org/show_bug.cgi?id=68851
   const handleKeyDown = (e) => { 
-    // e.preventDefault();   
     if (!isPressed && (e.keyCode === 32 || e.keyCode === 13)) { // Space or Enter      
       setIsPressed(true);
       handleSubmit();      
@@ -17,7 +16,6 @@ function Submit(props) {
   };
 
   const handleMouseDown = (e) => {
-    // e.preventDefault();   
     if (!isPressed) {       
       setIsPressed(true);
       handleSubmit();      
@@ -25,22 +23,16 @@ function Submit(props) {
   };
 
   const handleKeyUp = (e) => {
-    // e.preventDefault();
     if (isPressed) {
       setIsPressed(false);
     }
   };
 
   const handleMouseUp = (e) => {
-    // e.preventDefault();
     if (isPressed) {
       setIsPressed(false);
     }
   };
-
-  // const handleClick = (e) => {
-  //   e.preventDefault();
-  // };
   
   return (
     <div className="registration-form__submit__wrapper">
@@ -49,7 +41,6 @@ function Submit(props) {
           className={`registration-form__submit  
           ${isPressed ? "registration-form__submit_pressed" : ""}`}
           disabled={!isSubmitReady}
-          // onClick={handleClick}
           onMouseDown={handleMouseDown}
           onMouseUp={handleMouseUp}
           onKeyUp={handleKeyUp}
