@@ -8,6 +8,7 @@ import Submit from "../Submit/Submit.jsx";
 const tabIndex = 0;
 
 const invalidMessage = "Введено некорректное значение";
+const emptyMessage = "Поле не заполнено";
 
 const languages = [
   "Русский",
@@ -23,6 +24,7 @@ function Registration(props) {
       labelText: "Имя",
       placeholderText: "Введите ваше имя",
       invalidMessage,
+      emptyMessage,
       tabIndex: 0,
     },
     {
@@ -30,6 +32,7 @@ function Registration(props) {
       labelText: "Email",
       placeholderText: "Введите ваш email",
       invalidMessage,
+      emptyMessage,
       tabIndex: 0,
     },
     {
@@ -37,6 +40,7 @@ function Registration(props) {
       labelText: "Номер телефона",
       placeholderText: "Введите номер телефона",
       invalidMessage,
+      emptyMessage,
       tabIndex: 0,
     },  
   ];

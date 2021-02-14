@@ -8,6 +8,7 @@ function TextInput(props) {
     placeholderText, 
     inputId, 
     invalidMessage, 
+    emptyMessage,
     tabIndex,
   } = props.data;
 
