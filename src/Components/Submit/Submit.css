@@ -27,6 +27,8 @@
     align-items: center;
     justify-content: center;
 
+    border-width: 0; /* Otherwise Chrome adds  border-width: 2px */
+
     box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08), 0px 4px 8px rgba(44, 39, 56, 0.08);
 
     border-radius: 6px;

@@ -37,7 +37,7 @@ function Submit(props) {
   return (
     <div className="registration-form__submit__wrapper">
       <div className="registration-form__submit__base registration-form_margin-left">
-        <div  
+        <input type="button"
           className={`registration-form__submit  
           ${isPressed ? "registration-form__submit_pressed" : ""}`}
           disabled={!isSubmitReady}
@@ -46,9 +46,8 @@ function Submit(props) {
           onKeyUp={handleKeyUp}
           onKeyDown={handleKeyDown}          
           tabIndex={tabIndex}
-        >
-          Зарегистрироваться
-        </div>
+          value="Зарегистрироваться"
+        />
       </div>
     </div>
   );
