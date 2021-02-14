@@ -49,7 +49,12 @@
 
     transform-origin: top;
     transform: scaleY(0);
-    transition: transform .2s ease-in-out;    
+
+    /* Firefox-specific issue: 
+       Checkbox overlays on Dropdown list for a brief moment when the list is opening 
+       transition: transform .2s ease-in-out;  
+    */
+    transition: transform .2s linear;  
 }
 
 .registration-form__dropdown__list_open {
