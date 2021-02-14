@@ -150,8 +150,10 @@ function Dropdown(props) {
         </div>
       </div>
 
-      <div className="registration-form__dropdown__list"
-        style={{display: (isDropdownOpen ? "block" : "none")}}
+      {/* <div className="registration-form__dropdown__list"
+        style={{display: (isDropdownOpen ? "block" : "none")}} */}
+      <div className={`registration-form__dropdown__list
+        ${isDropdownOpen ? "registration-form__dropdown__list_open" : ""}`}
         onMouseLeave={handleOnHoverOff}
         ref={dropdownList}
       >
