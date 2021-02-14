@@ -17,8 +17,9 @@ function TextInput(props) {
   function onFocusHandler(event) {
     setTextInputStates({...textInputStates, 
       [inputId]: {
-        isFilled: true, // Dummy value!
-        isValid: true,  // Dummy value!
+        isFilled: true,   // Dummy value!
+        isValid: true,    // Dummy value!
+        isFocused: true,  // Actual value
       }
     });    
   }
@@ -39,11 +40,12 @@ function TextInput(props) {
       [inputId]: {
         isFilled,
         isValid,
+        isFocused: false,
       }
     });
   }
 
-  const {isFilled, isValid} = textInputStates[inputId];
+  const {isFilled, isValid, isFocused} = textInputStates[inputId];
 
   return (
     <div className="registration-form__input registration-form_margin-left">

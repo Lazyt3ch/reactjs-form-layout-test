@@ -46,9 +46,9 @@ function Registration(props) {
   ];
 
   const [textInputStates, setTextInputStates] = useState({
-    username: { isValid: true, isFilled: false },
-    email: { isValid: true, isFilled: false },
-    phone: { isValid: true, isFilled: false },
+    username: { isValid: true, isFilled: false, isFocused: false },
+    email: { isValid: true, isFilled: false, isFocused: false },
+    phone: { isValid: true, isFilled: false, isFocused: false },
   });
 
   const [language, setLanguage] = useState("");
@@ -68,7 +68,7 @@ function Registration(props) {
   useEffect(() => 
     {
       const submitReadiness = termsAccepted && Object.entries(textInputStates)
-        .every( ([key, value]) => value.isFilled && value.isValid);
+        .every( ([key, value]) => !value.isFocused && value.isFilled && value.isValid);
 
       setIsSubmitReady(submitReadiness);
     },
