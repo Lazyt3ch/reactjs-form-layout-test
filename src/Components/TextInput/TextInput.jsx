@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./TextInput.css";
 import validate from "../../utils/validators.js";
 
@@ -12,25 +12,19 @@ function TextInput(props) {
     tabIndex,
   } = props.data;
 
-  const { textInputStates, setTextInputStates } = props;
+  const {textInputStates, setTextInputStates} = props;
 
-  function onFocusHandler(event) {
-    setTextInputStates({...textInputStates, 
-      [inputId]: {
-        isFilled: true,   // Dummy value!
-        isValid: true,    // Dummy value!
-        isFocused: true,  // Actual value
-      }
-    });    
-  }
+  const [isFocused, setIsFocused] = useState(false);
 
   function onBlurHandler(event) {
+    setIsFocused(false);
+
     const trimmedValue = event.target.value.trim();
     let isFilled, isValid;
 
     if (!trimmedValue.length) {
       isFilled = false;
-      isValid = false;
+      isValid = true;
     } else {
       isFilled = true;
       isValid = validate(trimmedValue, inputId);
@@ -40,12 +34,13 @@ function TextInput(props) {
       [inputId]: {
         isFilled,
         isValid,
-        isFocused: false,
       }
     });
   }
 
-  const {isFilled, isValid, isFocused} = textInputStates[inputId];
+  const {isFilled, isValid} = textInputStates[inputId];
+
+  const NBSP = "\u00A0";
 
   return (
     <div className="registration-form__input registration-form_margin-left">
@@ -56,14 +51,14 @@ function TextInput(props) {
       <input type="text" 
         className="registration-form__input__field"
         onBlur={onBlurHandler}
-        onFocus={onFocusHandler}
+        onFocus={() => setIsFocused(true)}
         placeholder={placeholderText}
         id={inputId}
         tabIndex={tabIndex}
       />
 
       <div className="registration-form__input__invalid-message">
-        { !isFilled ? emptyMessage : !isValid ? invalidMessage : "\u00A0" }
+        { isFocused ? NBSP : !isFilled ? emptyMessage : !isValid ? invalidMessage : NBSP }
       </div>
     </div>
   )
