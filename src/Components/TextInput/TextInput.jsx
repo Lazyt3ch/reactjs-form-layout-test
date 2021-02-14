@@ -15,9 +15,14 @@ function TextInput(props) {
   const {textInputStates, setTextInputStates} = props;
 
   const [isFocused, setIsFocused] = useState(false);
+  const [isJustLoaded, setIsJustLoaded] = useState(true);
 
   function onBlurHandler(event) {
     setIsFocused(false);
+
+    if (isJustLoaded) {
+      setIsJustLoaded(false);
+    }    
 
     const trimmedValue = event.target.value.trim();
     let isFilled, isValid;
@@ -58,7 +63,14 @@ function TextInput(props) {
       />
 
       <div className="registration-form__input__invalid-message">
-        { isFocused ? NBSP : !isFilled ? emptyMessage : !isValid ? invalidMessage : NBSP }
+        { (isJustLoaded || isFocused)
+          ? NBSP 
+          : !isFilled 
+            ? emptyMessage 
+            : !isValid 
+              ? invalidMessage 
+              : NBSP 
+        }
       </div>
     </div>
   )
