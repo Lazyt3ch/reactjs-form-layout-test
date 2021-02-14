@@ -13,13 +13,22 @@ function TextInput(props) {
 
   const { textInputStates, setTextInputStates } = props;
 
+  function onFocusHandler(event) {
+    setTextInputStates({...textInputStates, 
+      [inputId]: {
+        isFilled: true,
+        isValid: true,
+      }
+    });    
+  }
+
   function onBlurHandler(event) {
     const trimmedValue = event.target.value.trim();
     let isFilled, isValid;
 
     if (!trimmedValue.length) {
       isFilled = false;
-      isValid = true;
+      isValid = false;
     } else {
       isFilled = true;
       isValid = validate(trimmedValue, inputId);
@@ -44,13 +53,14 @@ function TextInput(props) {
       <input type="text" 
         className="registration-form__input__field"
         onBlur={onBlurHandler}
+        onFocus={onFocusHandler}
         placeholder={placeholderText}
         id={inputId}
         tabIndex={tabIndex}
       />
 
       <div className="registration-form__input__invalid-message">
-        { isFilled && !isValid ? invalidMessage : "\u00A0" }
+        { !isFilled || !isValid ? invalidMessage : "\u00A0" }
       </div>
     </div>
   )
