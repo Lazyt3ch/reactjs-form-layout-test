@@ -17,8 +17,8 @@ function TextInput(props) {
   function onFocusHandler(event) {
     setTextInputStates({...textInputStates, 
       [inputId]: {
-        isFilled: true,
-        isValid: true,
+        isFilled: true, // Dummy value!
+        isValid: true,  // Dummy value!
       }
     });    
   }
@@ -61,7 +61,7 @@ function TextInput(props) {
       />
 
       <div className="registration-form__input__invalid-message">
-        { !isFilled || !isValid ? invalidMessage : "\u00A0" }
+        { !isFilled ? emptyMessage : !isValid ? invalidMessage : "\u00A0" }
       </div>
     </div>
   )
