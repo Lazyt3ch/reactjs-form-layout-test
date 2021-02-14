@@ -13,7 +13,7 @@ function TextInput(props) {
 
   const { textInputStates, setTextInputStates } = props;
 
-  function onChangeHandler(event) {
+  function onBlurHandler(event) {
     const trimmedValue = event.target.value.trim();
     let isFilled, isValid;
 
@@ -43,7 +43,7 @@ function TextInput(props) {
 
       <input type="text" 
         className="registration-form__input__field"
-        onChange={onChangeHandler}
+        onBlur={onBlurHandler}
         placeholder={placeholderText}
         id={inputId}
         tabIndex={tabIndex}
