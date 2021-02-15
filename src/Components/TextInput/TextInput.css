@@ -17,13 +17,24 @@
     height: 52px;
     width: calc(100% - 60px);    
     border-radius: 6px;    
+
     background-color: #FFFFFF;
     color: #2C2738;
+
     box-shadow: 0px 4px 8px 0px #2C2738 4%;
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
     border: 1px solid #DBE2EA;
+}
+
+/* https://css-tricks.com/snippets/css/change-autocomplete-styles-webkit-browsers/ */
+input.registration-form__input__field:-webkit-autofill,
+input.registration-form__input__field:-webkit-autofill:hover, 
+input.registration-form__input__field:-webkit-autofill:focus {
+    /* Prevents Chrome from applying its own styles on autofill */
+    -webkit-box-shadow: 0 0 0px 1000px #FFFFFF inset;
+    -webkit-text-fill-color: #2C2738;
 }
 
 .registration-form__input__field:focus {
