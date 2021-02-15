@@ -2,7 +2,7 @@ const validate = (value, valueType) => {
   switch (valueType) {
     case "username":
       // I'm not sure what to do with Chinese characters...
-      const RUSSIAN_LETTERS = "абвгдеёжзиклмнопрстуфхцчшщъюьэюя";
+      const RUSSIAN_LETTERS = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
       const ENGLISH_LETTERS = "abcdefghijklmnopqrstuvwxyz";
       const SOME_SPANISH_LETTERS = "áéíóúüñ";
       const usernameChars = `${RUSSIAN_LETTERS}${ENGLISH_LETTERS}${SOME_SPANISH_LETTERS} -`;
