@@ -14,7 +14,7 @@
 .registration-form__container {
     top: 0px;
     left: 0px;
-    width: 460px;
+    width: 100%;
     min-width: 360px;
     height: 789px;
 }
