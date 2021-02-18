@@ -69,5 +69,5 @@
     top: 2px;
 
     height: 54px;
-    width: 398px;
+    width: calc(100% - 2px);
 }
