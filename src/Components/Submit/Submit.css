@@ -3,13 +3,15 @@
     margin-bottom: 40px;    
 
     position: relative;
+
+    width: 100%;
 }
 
 .registration-form__submit__base {
     position: relative;
 
     height: 56px;
-    width: 400px;
+    width: calc(100% - 60px);
 
     left: 0;
     top: 0;
@@ -17,7 +19,7 @@
     background-color: black;
     z-index: 1;
 
-    border-radius: 6px;
+    border-radius: 6px;    
 }
 
 .registration-form__submit {    
@@ -34,7 +36,7 @@
     border-radius: 6px;
 
     height: 56px;
-    width: 400px;
+    width: 100%;
 
     font-weight: 500;
     font-size: 16px;
